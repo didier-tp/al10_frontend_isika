@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>calculatrice</title>
+	<meta charset="UTF-8">
+	<script src="./lib/jquery-3.5.1.js" ></script>
+	<script src="./js/calculatrice_jq.js" ></script>
+	<link rel="stylesheet" href="./css/styles.css" type="text/css" > 
+</head>
+<body id="main" >
+   
+   <h1 id="titre1" >calculatrice</h1>
+  
+   a: <input class="enEvidence" id="inputA" type="text" /> <br/>
+   b: <input class="enEvidence" id="inputB" type="text" /> <br/>
+   <input value="+" id="btnAdd" type="button" />
+   <input value="-" id="btnMoins" type="button" />
+   <input value="*" id="btnMult" type="button" />
+   <input value="/" id="btnDiv" type="button" /><br/>
+   res:<span class="enEvidence" id="spanRes"></span>
+
+   <hr/>
+   <input  type="checkbox" id="cbHisto" checked /> montrer historique
+   <ul id="ulHistorique" >
+      <!-- <li>2*3=6</li> -->
+   </ul>   
+  
+</body>
+</html>

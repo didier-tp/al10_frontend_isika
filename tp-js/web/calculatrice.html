@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>calculatrice</title>
+	<script src="./js/calculatrice.js" ></script>
+	<!-- <link rel="stylesheet" href="./css/styles.css" type="text/css" >  -->
+</head>
+<!-- <body id="main" onload="initialisation()"> -->
+<body id="main">
+   <h1 >calculatrice</h1>
+   a: <input id="a" type="text" value=""/> <br/>
+   b: <input id="b" type="text" /> <br/>
+   <input type="button" onclick="calculerOperation('+')"  value="a+b"></input>
+   <input type="button" onclick="calculerOperation('*')"  value="a*b"></input>
+   <input type="button" onclick="calculerOperation('-')"  value="a-b"></input> 
+   <input type="button" onclick="calculerOperation('/')"  value="a/b"></input><br/>
+   <div  id="spanRes">res</div> 
+   <hr/>
+   <input type="checkbox" id="cbHisto" onclick="cacherOuMontrerHistorique()" checked /> voir l'historique <br/>
+   <ul id="ulHistorique" >
+       <li style="font-style: italic;">0+0=0</li>
+    <!-- <li>2*3=6</li> -->
+   </ul>
+   <p>suite qui va bien</p>
+
+    <!-- <div id="divDuBas" onmousemove="reagirDeplacementSouris(event)"    >  -->
+    <div id="divDuBas"     >
+       aaa<br/>
+       bbb
+   </div>
+
+
+</body>
+</html>

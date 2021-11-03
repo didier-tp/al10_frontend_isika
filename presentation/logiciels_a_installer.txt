@@ -1,0 +1,5 @@
+Visual Studio Code (https://code.visualstudio.com/download# , 64bits)
+nodeJs (https://nodejs.org/en/download/ , version LTS, 64 bits)
+MongoDB (https://www.mongodb.com/try/download/community , platform = windows)
+
+mongodb://127.0.0.1:27017/test

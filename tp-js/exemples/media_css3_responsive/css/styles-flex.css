@@ -1,0 +1,75 @@
+/*.box {
+       display: flex;
+	   flex-direction: row;
+	   flex-wrap : wrap;
+      }*/
+	  
+/* align-items : center ou stretch ou flex-start ou flex-end 
+   pour controler l'alignement sur l'axe secondaire si les éléments n'ont pas la meme hauteur */	  
+.mybox {
+	   background-color: yellow; 
+       display: flex;
+	   flex-flow: row nowrap;
+	   align-items : center;
+      }
+.mywrapbox {
+       display: flex;
+	   flex-flow: row wrap;
+	   align-items : center;
+      }	 	  
+	
+/* flex: flex-grow, flex-shrink, flex-basis 
+   flex-basis = taille occupée ou bien auto (automatiquement calculée)
+   flex-grow et flex-shrink sont des coefficients (avec valeurs relatives par rapport aux autre éléments)*/
+.myitem {
+	   flex: 1 1 auto;
+	   text-align: center;
+	   padding: 2px;
+}	
+.mycell {
+	   flex: 1 1 auto;
+	   padding: 10px;
+       margin: 10px;
+	   background-color: green;
+       border: 1px solid red;
+	   text-align: center;
+}
+img { max-width:100%;} /* pour shrink sur images si trop grandes */
+
+/* attention , l'ordre des min-width est important du plus petit au plus grand !!!
+   xs, sm , md , lg , xl */
+@media screen and (max-width : 36em){
+.proportionalText {
+	/*font-size: 80%;*/
+	font-size: 50%;
+	color:red;
+}
+}
+
+@media screen and (min-width:36em ){
+.proportionalText {
+	font-size: 100%;
+	color:black;
+}
+}
+
+@media screen and (min-width:48em ){
+.proportionalText {
+	font-size: 110%;
+	color:green;
+}
+}
+
+@media screen and (min-width:64em){
+.proportionalText {
+	font-size: 140%;
+	color:blue;
+}
+}
+
+@media screen and (min-width : 80em){
+.proportionalText {
+	font-size: 180%;
+	color:red;
+}
+}

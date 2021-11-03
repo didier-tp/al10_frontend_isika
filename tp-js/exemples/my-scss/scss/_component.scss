@@ -1,0 +1,45 @@
+/* _components.scss = navbar , cards, ... , @import in styles.scss */
+
+
+.center {
+    text-align : center;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+
+  
+  /* Add some padding inside the card body */
+  .card>.body {
+    padding: 2px 16px;
+  }
+
+   
+
+  input[type=button]{
+    color : myColor(txt-inv-primary);
+    background-color: myColor(bg-primary);
+  }
+
+  input[type=button].highlight{
+    color : myColor(txt-inv-primary);
+    background-color: myColor(bg-hl-primary);
+  }
+
+  input[type=button]:hover{
+    color : myColor(txt-inv-hl-primary);
+    background-color: myColor(bg-primary);
+  }
+
+  input[type=button].highlight:hover{
+    color : myColor(txt-inv-hl-primary);
+    background-color: myColor(bg-hl-primary);
+  }
+
+  

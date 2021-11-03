@@ -1,0 +1,22 @@
+[
+{
+"_id" : "USD",
+"nom" : "Dollar",
+"change" : 1.11
+},
+{
+"_id" : "EUR",
+"nom" : "Euro",
+"change" : 1
+},
+{
+"_id" : "GBP",
+"nom" : "Livre",
+"change" :0.9961
+},
+{
+"_id" : "JPY",
+"nom" : "Yen",
+"change" : 112.203
+}
+]

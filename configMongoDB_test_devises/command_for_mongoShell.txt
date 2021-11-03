@@ -1,0 +1,13 @@
+db.devises.find();
+db.devises.insert({ _id : "ms" , nom: "monnaieSinge" , change: 123456.789});
+db.devises.insert({ _id : "ms2" , nom: "monnaieSinge2" , change: 6677.78});
+db.devises.find();
+db.devises.update({ nom: "monnaieSinge"},{$set: { change: 456.34 }});
+db.devises.updateOne({ _id: "ms"},{$set: { change: 456.34 }});
+db.devises.remove({ _id: "ms2"});
+db.devises.find();
+
+db.devises.insert({  nom: "monnaieSinge3" , change: 6677.78});
+db.devises.find();
+db.devises.remove({  nom: "monnaieSinge3" });
+db.devises.find();

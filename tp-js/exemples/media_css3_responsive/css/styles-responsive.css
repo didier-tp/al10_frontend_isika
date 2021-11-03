@@ -1,0 +1,26 @@
+/*d'abord les regles pour tous médias et tailles */
+
+ 
+h1 { font-size: 72px}
+h1 , h2 { color : #0ca027 }
+
+nav { height: 50px; background-color : lightgray; text-align : center}
+
+
+p {
+width: 200px; height: 50px; background-color: #85c4db; /*bleu ciel */
+} 
+
+/* ensuite nouvelles regles pour taille > 600ps de large) */
+@media screen and (min-width : 600px){
+   body { background-color : #f4b6a6}
+ 
+}
+
+/* ensuite nouvelles regles pour taille < 600ps de large) */
+@media screen and (max-width : 600px){
+   body { background-color : #f0f296}
+   h1 { font-size: 32px}
+   h2 { color : black;}
+   nav { display : none; }
+}

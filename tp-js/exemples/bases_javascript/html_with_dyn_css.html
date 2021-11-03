@@ -1,0 +1,68 @@
+<html>
+<head>
+  <title>dyn css</title>
+  <link rel="stylesheet" type="text/css" href="css/default_styles.css"/>
+  <link rel="stylesheet" type="text/css" href="css/css3_styles.css"/>
+  <script src="js/dyn_css.js" ></script>
+</head>
+<body>
+<h3> experimentation de quelques styles css </h3>
+<div>
+Rappel des unités : px , pt , em , ...<br/>
+ligne avant<br/>
+<div id="divA">
+aaaa<br/>
+bbbb<br/>
+</div>
+ligne apres
+</div>
+<hr/>
+<form name="frm">
+<input type="button" value="apply (changed styles)" onClick="fctApply()" >
+<br/>
+visibility:<select  id="txtVisibility"> <option>visible</option> <option>hidden</option> </select> 
+display:<select  id="txtDisplay"> <option>block</option>  <option>inline</option> <option>none</option></select>
+<br/>	
+position:<select id="txtPosition"> <option>relative</option> <option>absolute</option> <option>fixed</option> <option>static</option> </select>
+top:<input  id="txtTop" value="0" size=8/>
+left:<input id="txtLeft" value="0" size=8/>
+width:<input  id="txtWidth" value="80%" size=8/>
+height:<input  id="txtHeight" value="2.2em" size=8/><br/>
+<hr>
+margin(outside with background color of parent):<input  id="txtMargin" value="5px" size=12/> 
+<br/>
+border-color:<input type="color"  id="txtBorderColor" value="#000000" />(<span id="txtBorderColorValue">rgb(0,0,0)</span>) , 
+border-width:<input  id="txtBorderWidth" value="2px" size=12 /> 
+border-style:<select  id="txtBorderStyle"> <option>solid</option> <option>none</option> <option>dashed</option> </select>
+<br/>
+background:<input type="color" id="txtBackground" value="#dddddd">(<span id="txtBackgroundValue">rgb(200,200,200)</span>) ,
+ padding(inside with background color):<input  id="txtPadding" value="3px" size=8/> (in addition to height)
+<hr>
+color:<input type="color" id="txtColor" value="#0000bb">(<span id="txtColorValue">rgb(0,0,255)</span>) , font-weight:<select id="txtFontWeight"> <option>bold</option> <option>normal</option> 
+  <option>100</option> <option>300</option> <option>600</option> <option>900</option> </select>
+font-size:<input id="txtFontSize" value="14pt" size=12>
+  font-family:<select  id="txtFontFamily"> <option>courier</option> <option>arial</option> </select>
+font-style: <select  id="txtFontStyle"> <option>italic</option> <option>normal</option> </select>
+<br/>
+text-align:<select  id="txtTextAlign"> <option>center</option> <option>left</option> <option>right</option></select>
+text-decoration:<select  id="txtTextDecoration" > <option>none</option> <option>underline</option> <option>line-through</option></select>
+text-transform:<select id="txtTextTransform"> <option>uppercase</option> <option>none</option>
+ <option>lowercase</option> <option>capitalize</option> </select>
+<hr/>
+**************** nouveaux styles css3 (ci-dessous) ************<br/>
+<span style="background: rgba(217, 127, 185, 0.8);">strong opacity = background:rgba(217, 127, 185, 0.9);</span>  rgb<b>a</b> means rgb with <b>alpha opacity</b> <br/>
+<span style="background: rgba(217, 127, 185, 0.5);">medium opacity = background:rgba(217, 127, 185, 0.5);</span> <br/>
+<span style="background: rgba(217, 127, 185, 0.2);">small opacity = background:rgba(217, 127, 185, 0.2); / near transparent </span>
+<br/>
+<div  style="transform : rotate(30deg); width:200px; background: yellow; color:blue; float:right; " > transform : rotate(30deg); </div>
+<div id="divB">
+un deux trois<br/>
+quatre cinq six<br/>
+</div>
+*****<br/>
+<hr/>
+</form>
+
+
+</body>
+</html>

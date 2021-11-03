@@ -1,0 +1,11 @@
+configuration expliquee dans keycloak.pdf
++
+partie restDeviseApiOAuth2 de https://github.com/didier-mycontrib/jee-spring-app-demo
++
+partie de oidc-app de https://github.com/didier-mycontrib/angular8plus
+
+=======
+Dans futures versions:
+- intégration docker
+- avec api-gateway
+- intégration cloud

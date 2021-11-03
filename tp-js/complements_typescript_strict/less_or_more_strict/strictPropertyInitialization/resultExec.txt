@@ -1,0 +1,2 @@
+p2A={"taille":0,"prenom":"","nom":""}
+p2B={"taille":0,"prenom":"jean","nom":"Bon"}

@@ -1,0 +1,59 @@
+h2 {
+  color: #ff00aa;
+}
+h2:hover {
+  color: #ff0000;
+}
+
+p {
+  color: #eebb00;
+}
+p:hover {
+  color: #00bb00;
+}
+
+h1, h5, h4 {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+h1, h5, h4 {
+  text-transform: uppercase;
+}
+
+h3 {
+  border: 2px solid blue;
+  color: #ff66cc;
+}
+
+h4 {
+  color: #990066;
+}
+
+h5 {
+  background-color: rgba(255, 0, 170, 0.5);
+}
+
+p.c1 {
+  border-color: blue;
+}
+
+.spacer-1 {
+  margin: 1rem;
+}
+
+.spacer-2 {
+  margin: 2rem;
+}
+
+.spacer-3 {
+  margin: 3rem;
+}
+
+.avecBordureEtRotation {
+  width: 300px;
+  transform: rotate(25deg);
+  border: 2px solid blue;
+}
+
+/*# sourceMappingURL=basic.css.map */

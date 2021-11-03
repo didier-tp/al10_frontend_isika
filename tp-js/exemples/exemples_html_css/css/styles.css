@@ -1,0 +1,31 @@
+
+@import "common.css";
+
+.centre { text-align: center;}
+p { color : green !important }
+.enEvidence { color:red ; font-weight: bold; }
+#ZoneXY { color: rgb(7, 7, 53); font-style :italic; }
+
+/* margin (marge externe) dans la couleur du parent
+   padding (marge interne) dans la couleur de la boite courante 
+*/
+
+#divA {
+	color : blue;
+	background-color: lightyellow;
+	margin-left : 3em; margin-right : 1em;margin-top : 2em;margin-bottom : 0em;
+	padding : 1em;
+	border: 0; border-left : 0.5em; border-style: solid; border-color: green;
+}
+
+#divA:hover {
+	color : blue;
+	background-color: lightyellow;
+	margin-left : 3em; margin-right : 1em;margin-top : 2em;margin-bottom : 0em;
+	padding : 1em;
+	border: 0; border-left : 0.5em; border-style: solid; border-color: red;
+}
+
+.c1 { font-family : Arial; font-size : 12pt; font-style : italic; }
+.c2 { font-family : monospace; font-size : 24pt; font-weight : bold; }
+.c3 { font-family : cursive; text-align : center; text-decoration : underline; }

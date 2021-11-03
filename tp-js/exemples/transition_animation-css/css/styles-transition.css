@@ -1,0 +1,16 @@
+h1 { font-size: 48px}
+h1 , h2 { color : #0ca027 }
+.enEvidence { color:red ; font-weight : bold}
+nav { background-color : lightgray; text-align : center}
+nav:hover { background-color : white; transition: background-color 1s cubic-bezier(0,1.1,1,-0.1);  }
+a { text-decoration : none ; color: black}
+a:hover  , button:hover  { color: blue; transition : color 2s ease}
+a:active , button:active { color: red ; transition : color 2s linear}
+
+
+p {
+background-color:  #85c4db; /*bleu ciel */
+transition-property: background-color; /* Transition sur background-color */ 
+transition-duration: 4s; /* Durée 1s */
+}
+p:hover { background-color: #93db83; /* vert*/ }

@@ -1,0 +1,44 @@
+<html>
+<head>
+   <title>page_7</title> 
+</head>
+<body>
+	<h1>page 7 (formulaires)</h1>
+	<form method="GET" action="#" enctype="multipart/form-data">
+	    <label>genre:</label> 
+	    <input type="radio" name="genre" value="Mr" checked />Mr   
+	    <input type="radio" name="genre" value="Mme" />Mme <br/> 
+		
+		<label>prenom :</label> 
+		<input type="text" name="prenom" 
+		       placeholder="avec au moins 2 caracteres"
+			   required minlength='2' /> <br/>
+		<label>nom:</label> 
+		<input type="text" name="nom" size="48"
+					placeholder="nom requis avec Majuscule au debut" 
+					pattern="[A-Z].+"	required /> <br/>
+		<label>age:</label> <input type="number" name="age" size="6" /> <br/>
+		<label>mot de passe:</label> <input type="password" name="age" /> <br/>
+		
+		<fieldset><legend >communication</legend>
+			<label>sujet:</label> 
+			<select size="1" name="sujet" >
+                <option>nouveau contact</option>
+			    <option  value="claim">reclamation</option>
+				<option selected >suggestion</option>
+             </select> 	<br/>
+			 
+			<label>publicité:</label> 
+			<input type="checkbox" name="pub" value="oui" />demandée  <br/>
+		
+			<label>question:</label> 
+			<textarea name="question" ></textarea> <br/>
+				
+			<label>fichier:</label> 
+			<input type="file" name="fichier" /> <br/>
+		</fieldset>
+		
+		<input type="submit" value="envoyer" />
+	</form>
+</body>
+</html>

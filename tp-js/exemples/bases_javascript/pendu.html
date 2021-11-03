@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Pendu</title>
+    </head>
+    <body>
+        <div class="app">
+            <h1>Pendu / javascript + canvas html5</h1>
+			<div id="divPendu" class="simple">
+			 <input type="button" value="jouer nouvelle partie" id="btnJouer" /><br/>
+			 <hr/>
+			 mot a deviner: <b><span id="spanMotMystere"></span></b><br/><br/>
+			 Lettre: <input  id="lettre" size="1" value="?" />  <input type="button" value="proposer" id="btnProposer" /><br/>
+			 Nombre essais restants: <span id="spanNbEssaisRestants"></span><br/>
+			 <canvas id="myCanvas" width="150" height="150" 
+			 style="border:1px solid #000000;">
+			 </canvas><br/>
+			 <b><span id="spanMsg"></span></b>
+			 
+		    </div>
+        </div>
+        <script type="text/javascript" src="js/pendu.js"></script>
+    </body>
+</html>

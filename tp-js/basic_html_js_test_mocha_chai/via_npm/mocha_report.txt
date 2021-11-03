@@ -1,0 +1,11 @@
+
+
+  my calculator tests
+initialisation : new ... or ...
+    √ 2+3==5?
+initialisation : new ... or ...
+    √ 2*3==6?
+
+
+  2 passing (10ms)
+

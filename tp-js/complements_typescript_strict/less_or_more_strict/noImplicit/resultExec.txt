@@ -1,0 +1,6 @@
+arg of explicit any type : 6
+arg of explicit any type : abc
+arg of explicit unknown type : 6
+arg of explicit unknown type : abc
+bad Goodbye undefined
+Goodbye toto

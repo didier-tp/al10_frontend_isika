@@ -1,0 +1,48 @@
+
+$my-media-breakpoints-bootstrap-css: (
+    "sm": 576px,
+    "md": 768px,
+    "lg": 992px,
+    "xl": 1200px
+);
+$my-media-breakpoints : $my-media-breakpoints-bootstrap-css;
+
+//coeffs for font-size of text :
+$my-media-coeffs: ( "sm": 100%, "md": 110%,  "lg": 120%,  "xl": 130%);
+
+@mixin media-min($_key) {
+   @if map-has-key($my-media-breakpoints, $_key) {
+		@media screen and (min-width: map-get($my-media-breakpoints, $_key)) {
+			&{ @content; }
+		}
+	} @else {
+    // Log a warning.
+    @warn 'Invalid breakpoint key: #{$_key}.';
+  }
+}
+
+@mixin media-max($_key) {
+    @media screen and (max-width: map-get($my-media-breakpoints, $_key) - 1px) {
+        &{ @content; }
+    }
+}
+
+@mixin media-between($_keymin, $_keymax) {
+    @media screen and (min-width: map-get($my-media-breakpoints, $_keymin)) and (max-width: map-get($my-media-breakpoints, $_keymax) - 1px) {
+        &{ @content; }
+    }
+}
+
+/* alternative names for media-query mixins :
+	media-min or respond-below or media-breakpoint-up, media-max or respond-above , media-between or respond-between 
+*/
+
+%my-responsive-text {
+    font-size:80%;
+
+    @each $_key, $_value in $my-media-breakpoints {
+        @include media-min($_key) {
+           font-size: map-get($my-media-coeffs, $_key);
+        }
+    }
+}

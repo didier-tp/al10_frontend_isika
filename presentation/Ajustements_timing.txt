@@ -1,0 +1,22 @@
+Au vu du temps passé par AL6 et AL7 sur les parties en autonomie,
+
+les réajustements suivants sont conseillés:
+* estimation initiale : 
+    4 premiers chapitres en autonomie : trop dense sur cours 1 à 4 !!
+ 
+ET DONC CONTRAIREMENT A CE QU'IL PEUT ETRE ECRIT SUR LA PLATE-FORME:
+* pour les cours 1,2,3 et 4 :
+    -  seuls les 3 premiers chapitres sont à étudier en autonomie (le J1) .
+    - les chapitres suivants (4 , 5 , ...) seront abordés en téléprésentiel
+* Et en particulier , Le TP du chapitre 4 du cours 1 sera effectué
+  lors de la journée en télé-présentiel
+
+====================
+Ajustements sut formation Angular:
+
+Depuis la v11 , un nouveau projet angular est par défaut en mode strict=true sur le langage typescript
+alors que cétait au choix en v9 , v10 et par défaut en mode strict=false en v2 - v8
+
+Il y a donc des petits réglages à effecter sur le code de certains exemples pour éliminer certaines erreurs liées au mode strict .
+  
+

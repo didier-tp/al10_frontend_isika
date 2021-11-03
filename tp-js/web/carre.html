@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>au carre</title>
+        <script>
+           function onCalculCarre(){
+              var eltInputX = document.getElementById("inputX");
+              var x = Number(eltInputX.value);
+              var res = x*x;
+              var eltSpanCaree = document.getElementById("spanCarre");
+              eltSpanCaree.innerHTML="<b>"+res+"</b>";
+           }
+        </script>
+    </head>
+    <body>
+        x: <input type="text" id="inputX" /> <br/>
+        <input type="button" value="au carre" onclick="onCalculCarre()" /> <br/>
+        x*x = <span id="spanCarre"></span> 
+    </body>
+</html>

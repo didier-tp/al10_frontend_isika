@@ -1,0 +1,53 @@
+@import "variables";
+
+h2  { 
+    color: $couleur1 ;
+    &:hover { 
+	      color: $couleur3 ;
+      	}
+	}
+p { 
+   color : $couleur2;
+   &:hover { 
+	      color: $couleur4 ;
+      	}
+}
+
+@mixin with-border($color){
+ border: 2px solid $color;
+}
+
+%abstract-bold-underline{
+   text-decoration: underline;
+   font-weight : bold;
+}
+h1 { @extend %abstract-bold-underline; text-transform : uppercase;  } 
+h3 { @include with-border(blue); color: lighten($couleur1, 20%);  }
+h4 { @extend h1; color: darken($couleur1, 20%); }  
+h5 { @extend h1; background-color: transparentize($couleur1, 0.5);}
+
+$className: c1;
+$attr: border;
+p.#{$className} {
+  #{$attr}-color: blue;
+}
+
+@for $i from 1 through 3 {
+  .spacer-#{$i} {
+    margin: $i * 1rem;
+  }
+}
+
+@mixin with-rotation($rotation) {
+  @if $rotation == 0 {
+  }  
+  @else {
+    transform: rotate($rotation);
+  }
+}
+
+.avecBordureEtRotation {
+  width:300px;
+  @include with-rotation(25deg);
+  @include with-border(blue);
+}

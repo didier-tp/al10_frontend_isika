@@ -1,0 +1,29 @@
+@keyframes monanimation 
+{ 
+  0% { transform: translateX(0px); }
+ 50% { transform: translateX(40px) rotate(-15deg) ;} 
+ 100% { transform: translateX(80px) rotate(15deg); }
+ }
+ 
+@keyframes monrebond 
+{ 
+  0% { transform: translateY(0px) translateX(0px);}
+ 50% { transform: translateY(8px) translateX(2px);} 
+ 100% { transform: translateY(0px) translateX(0px); }
+ }
+ 
+
+h1 { font-size: 48px}
+h1 , h2 { color : black }
+.enEvidence { color:red ; font-weight : bold}
+nav { height: 50px; background-color : lightgray; text-align : center}
+nav:hover { background-color : white; transition: background-color 1s cubic-bezier(0,1.1,1,-0.1);  }
+a { display:inline-block; text-decoration : none ; color: black}
+a:hover   { color: blue; transition: color 1s linear; animation : monrebond 1s;}
+button:hover  { color: blue; animation : monrebond 1s;}
+a:active , button:active { color: red ; transition : color 2s linear}
+
+p {
+width: 200px; height: 50px; background-color: #85c4db; /*bleu ciel */
+} 
+p:hover { background-color: #93db83; /* vert*/; animation: monanimation 2s ; }

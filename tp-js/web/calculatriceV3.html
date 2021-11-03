@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>calculatrice V3</title>
+	<script src="./js/calcul.js" ></script> 
+	<script src="./js/calculatriceV3.js" ></script>
+	<!-- V3 = V2 remaniée appelant sous fonction calculerOp(op,a,b)
+         dans calcul.js (pour test unitaire 
+		 sur sous partie calcul.js) -->
+</head>
+<body id="main" >
+   <h1>calculatrice V3</h1>
+   a: <input id="a" type="text" /> <br/>
+   b: <input id="b" type="text" /> <br/>
+   <input type="button" value="a+b" id="btn_op_addition" />
+   <input type="button" value="a*b" id="btn_op_multiplication" />
+   <input type="button" value="a-b" id="btn_op_soustraction" />
+   <input type="button" value="a/b" id="btn_op_division" /> <br/>
+   res:<span  id="spanRes"></span> 
+   <hr/>
+   <input type="checkbox" id="cbHisto" checked /> voir l'historique <br/>
+   <ul id="ulHistorique" >
+    <!-- <li>2*3=6</li> -->
+   </ul>
+</body>
+</html>

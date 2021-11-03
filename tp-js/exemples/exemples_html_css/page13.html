@@ -1,0 +1,31 @@
+<html>
+<head>
+   <title>page_13</title>
+   <link rel="stylesheet" href="css/layout.css" />
+   <link rel="stylesheet" href="css/styles.css" />
+   <style>
+   label.memeLargeur { display : inline-block ; text-align : right; width : 10em;}
+   </style>
+</head>
+<body>
+<body>
+   <header class="stickyHeader">
+   <h2>entete qui va bien (toujours visible en haut)</h2>
+   </header>
+   <section id="mainContent" 
+      class="mainContentUnderStickyHeader mainContentAboveStickyFooter">
+      <h1 id="appTitle">page 13 positionnement css (sticky header , sticky-footer)</h1>
+	  <p>... layout.css ...</p>
+	  <p>... suite ...</p>
+	  <form method="GET" action="#" >
+        <label class="memeLargeur">prenom :</label> <input type="text" name="prenom" /> <br/>
+        <label class="memeLargeur">nom :</label> <input type="text" name="nom" /> <br/>
+        <label class="memeLargeur">age :</label> <input type="number" name="age" size="6" /> <br/>
+        <label class="memeLargeur"></label>&nbsp;<input type="submit" value="envoyer" />
+    </form>
+   </section>
+   <footer class="stickyFooter">
+	  <h4>pied de page (liens, mentions légales) ,toujours en bas</h4>
+   </footer>
+</body>
+</html>

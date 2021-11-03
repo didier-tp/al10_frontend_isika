@@ -1,0 +1,33 @@
+@import 'font/allura-webfont.css';
+@import 'font/theroots-webfont.css';
+@import 'font/playfair-display-webfont.css';
+
+.withAlluraFont{
+	font-family : alluraregular, Arial ;
+	font-size : 2em;
+}
+
+.withPayfairDisplayFont{
+	font-family : playfair_displayregular, Arial ;
+	font-size : 1.5em;
+}
+
+.acrostiche > p {
+   line-height : 100% 
+}
+
+.acrostiche > p:first-letter {
+	font-family : playfair_displayregular, Arial ;
+	color : red;
+	font-size : 2em;
+}
+
+.withTheRootsFont{
+	font-family : therootsregular, Arial ;
+	font-size : 2em;
+}
+
+.enEvidence {
+    color : rgb(34, 34, 180) !important ;
+    font-style : italic;
+    }

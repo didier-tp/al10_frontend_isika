@@ -1,0 +1,85 @@
+<html>
+<head>
+   <title>page_9</title> 
+</head>
+<body>
+	<header style="background-color:lightblue">
+	   entete de page qui va bien
+	</header>
+	<section>
+		<h1>page 9 (recapitulatif HTML)</h1>
+		<h3>tableau des principales devises</h3>
+<table border="1">
+ <thead>
+   <tr><th>code</th><th>monnaie</th><th>change pour 1 euro</th></tr>
+ </thead>
+ <tbody>
+   <tr><td>EUR</td><td>euro</td><td>1</td></tr>
+   <tr><td>USD</td><td>dollar</td><td>1.12</td></tr>
+   <tr><td>GBP</td><td>livre</td><td>0.9</td></tr>
+   <tr><td>JPY</td><td>yen</td><td>123.4</td></tr>
+ </tbody>
+</table>
+		<hr/>
+		<h3>tableau avec contenu multimedia</h3>
+<table border="1">
+ <thead>
+   <tr><th>type media</th><th>media</th></tr>
+ </thead>
+ <tbody>
+   <tr>
+      <td>image</td>
+	  <td><img src="images/animal2.jpg" width='300' height='200'
+	  alt="cet animal est un tigre"/></td>
+  </tr>
+   <tr>
+     <td>audio</td>
+	 <td><audio controls >
+            <source src="audios/audio2.mp3" />
+	    </audio>
+	 </td>
+   </tr>
+   <tr>
+      <td>video</td>
+	  <td><video controls width='300' height='200'>
+             <source src="videos/video2.mp4" />
+		</video></td>
+	</tr>
+ </tbody>
+</table>
+<h3>formulaire (en mode GET)</h3>
+	<form method="GET" action="#">
+	    <label>genre:</label> 
+	    <input type="radio" name="genre" value="materiel" checked />Matériel   
+	    <input type="radio" name="genre" value="virtuel" />Virtuel <br/> 
+		
+		<label>label :</label> 
+		<input type="text" name="label" 
+		       placeholder="avec au moins 3 caracteres"
+			   required minlength='6' /> <br/>
+		<label>description detaill&eacute;e: (5 lignes)</label> <br/>
+		<textarea name="description" 
+		          rows="5" cols="64">
+		</textarea> <br/>
+		<label>poids (en grammes):</label> <input type="number" name="poids" /> <br/>
+		
+		<label>livraison:</label> 
+			<select size="1" name="livraison" >
+                <option>ordinaire (poste)</option>
+			    <option selected>collisimo</option>
+				<option>pigeon voyageur</option>
+             </select> 	<br/>
+		<p>...</p> 	<p>...</p>
+		<label>precaution:</label> 
+			<input type="checkbox" name="fragile" value="oui" />fragile<br/>
+		
+		<input type="submit" value="envoyer" />
+	</form>
+
+	</section>
+	<footer style="background-color:lightgreen">
+	   pied de page qui va bien
+	   <a href="index.html">retour index</a>
+	</footer>
+</body>
+</html>

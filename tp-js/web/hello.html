@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>hello</title>
+        <script src="js/hello.js"></script>
+        <script>
+           function helloWorldInSpanMsg(){
+              var eltSpanMsg = document.getElementById("spanMsg");
+              eltSpanMsg.innerHTML="<b>hello world</b>";
+           }
+        </script>
+    </head>
+    <body>
+        <h1>page hello.html</h1>
+        <input type="button" value=" say 'hello world'" 
+              onclick="helloWorldInSpanMsg()" /> 
+        <span id="spanMsg"></span> 
+        <hr/>
+        <input type="button" value="promptAndAlert" 
+                onclick="promptAndAlert()" /> 
+        
+    </body>
+</html>

@@ -1,0 +1,31 @@
+@import "bases";
+
+#contentXx {
+    width: 100%;
+
+    @include media-min('md') {
+        font-size:100%;
+		color:blue;
+    }
+    @include media-min('lg') {
+        font-size:110%;
+		color:red;
+    }
+}
+
+#contentYy {
+    width: 100%;
+
+    @include media-max('md') {
+        font-size:100%;
+		color:blue;
+    }
+    @include media-between('lg','xl') {
+        font-size:110%;
+		color:red;
+    }
+}
+
+#contentZz {
+	@extend %my-responsive-text; 
+}

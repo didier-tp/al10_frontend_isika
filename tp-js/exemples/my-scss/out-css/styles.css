@@ -1,0 +1,136 @@
+/* _common.scss = _base + _layout + _component */
+/* _base.scss = variables + mixins , @import in styles.scss */
+.bg-inv-primary {
+  background-color: #ffffff;
+}
+
+.bg-primary {
+  background-color: #206321;
+}
+
+.bg-hl-primary {
+  background-color: #176b80;
+}
+
+.txt-primary {
+  color: #134703;
+}
+
+.txt-hl-primary {
+  color: #176b80;
+}
+
+.txt-inv-primary {
+  color: #ffffff;
+}
+
+.txt-inv-hl-primary {
+  color: #faf744;
+}
+
+.bg-inv-secondary {
+  background-color: #ffffff;
+}
+
+.bg-secondary {
+  background-color: #3abb3a;
+}
+
+.bg-hl-secondary {
+  background-color: #5687e2;
+}
+
+.txt-secondary {
+  color: #198116;
+}
+
+.txt-hl-secondary {
+  color: #5687e2;
+}
+
+.txt-inv-secondary {
+  color: #ffffff;
+}
+
+.txt-inv-hl-secondary {
+  color: #581050;
+}
+
+.bg-inv-secondary2 {
+  background-color: #ffffff;
+}
+
+.bg-secondary2 {
+  background-color: #9ed30ed8;
+}
+
+.bg-hl-secondary2 {
+  background-color: #4a9c91;
+}
+
+.txt-secondary2 {
+  color: #154e0e;
+}
+
+.txt-hl-secondary2 {
+  color: #4a9c91;
+}
+
+.txt-inv-secondary2 {
+  color: #ffffff;
+}
+
+.txt-inv-hl-secondary2 {
+  color: #581050;
+}
+
+/* _layout.scss = layout, grid, container , @import in styles.scss */
+/* @angular/flex-layout is already used in this project , this file is empty */
+/* _components.scss = navbar , cards, ... , @import in styles.scss */
+.center {
+  text-align: center;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+/* Add some padding inside the card body */
+.card > .body {
+  padding: 2px 16px;
+}
+
+input[type=button] {
+  color: #ffffff;
+  background-color: #206321;
+}
+
+input[type=button].highlight {
+  color: #ffffff;
+  background-color: #176b80;
+}
+
+input[type=button]:hover {
+  color: #faf744;
+  background-color: #206321;
+}
+
+input[type=button].highlight:hover {
+  color: #faf744;
+  background-color: #176b80;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/*# sourceMappingURL=styles.css.map */

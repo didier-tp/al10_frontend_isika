@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>commande</title>
+        <script src="js/commande.js"></script>
+        <!-- <script src="js/commandeSolution.js"></script> -->
+    </head>
+    <body>
+	    <select id="selProd">
+           <!-- <option value="p2">stylo</option> -->
+		
+		</select><br/>
+		<label>produit sélectionné:</label>
+		<span id="spanProdSel"></span> <br/>
+		<label>quantité:</label>
+		<input type="number" id="qte" value="1" /> <br/>
+		<input type="button" id="btnAdd" value="ajouter" />
+	    <hr/>
+		<h2>commande:</h2>
+        <table border="1" id="tableauCommande">
+            <thead>
+             <tr><th>.</th><th>ref</th><th>label</th><th>prix unitaire</th><th>qte</th><th>prix</th></tr>
+            </thead>
+            <tbody id="bodyTableau">
+            </tbody>
+          </table>
+	    <input type="button" id="btnSuppr" value="supprimer élements sélectionnés" />
+    </body>
+</html>

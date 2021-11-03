@@ -1,0 +1,19 @@
+<html>
+        <head>
+            <title>MyCdnMochaChaiTestRunner</title>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/7.2.0/mocha.css">
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/7.2.0/mocha.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.2.0/chai.min.js"></script>
+        </head>
+        <body>
+		    <div id="mocha"><p><a href=".">index</a></p></div>
+			<div id="messages"></div>
+			<div id="fixtures"></div>
+		  <script>mocha.setup('bdd')</script>
+		  <!-- what to test: -->
+		  <script src='js/calcul.js'></script>
+		  <!-- tests to run: -->
+		  <script src='js/calcul.spec.js'></script>
+		  <script>mocha.run()</script>
+        </body>
+</html>

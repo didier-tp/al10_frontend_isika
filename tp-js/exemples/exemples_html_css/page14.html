@@ -1,0 +1,83 @@
+<html>
+<head>
+   <title>page_14</title>
+   <style>
+   .fondGris { background-color: lightgrey; border:2px; border-style:solid;}
+   
+   .montre { visibility: visible;}
+   .cache { visibility: hidden;}
+   .deploye { display: block;}
+   .contracte { display: none;}
+   
+   .sur2colonnes { float:left;width:48%; margin:1%}
+   .retourNormalSurUneColonne { clear:both;}
+   
+   .changeAuSurvol { background-color : white; color: blue;}
+   .changeAuSurvol:hover { background-color : blue; color: white;}
+   thead  tr { background-color : white; color: blue;}
+   tbody  tr:nth-child(2n)   { background-color : lightred; }
+   tbody  tr:nth-child(2n+1) { background-color : lightyellow; }
+   
+   </style>
+</head>
+<body>
+<h1>page 14 , display vs visibility css , ...</h1>
+
+<!-- 2 grandes div englobantes pour affichage sur 2 colonnes -->
+<div class="sur2colonnes"> 
+	<p>ligne avant (visibility : visible)</p>
+	<div class="montre fondGris">
+	ligne 1 <br/>
+	ligne 2
+	</div>
+	<p>ligne apres (visibility : visible)</p>
+	<hr/>
+	<p>ligne avant (display : block)</p>
+	<div class="deploye fondGris">
+	ligne 1<br/>
+	ligne 2
+	</div>
+	<p>ligne apres (display : block)</p>
+</div>
+<div class="sur2colonnes"> 
+	<p>ligne avant (visibility :  hidden)</p>
+	<div class="cache fondGris">
+	ligne 1<br/>
+	ligne 2
+	</div>
+	<p>ligne apres (visibility :  hidden)</p>
+	<hr/>
+	<p>ligne avant (display :  none)</p>
+	<div class="contracte fondGris">
+	ligne 1<br/>
+	ligne 2
+	</div>
+	<p>ligne apres (display :  none)</p>
+</div>
+
+<div class="retourNormalSurUneColonne">
+<hr/>
+	<input type="button" value="bouton actif" /> &nbsp;&nbsp;
+	<input type="button" disabled
+		   value="bouton temporairement inactif(disabled)" />
+<hr/>
+    <h3> pseudo classes :hover , ...</h3>
+	<div class="changeAuSurvol">
+	un deux trois , change lors du survol par curseur souris
+    </div>
+    <p>...</p>
+	<table border="1">
+ <thead>
+   <tr><th>article</th><th>caracteristiques</th><th>prix</th></tr>
+ </thead>
+ <tbody>
+   <tr><td>cahier</td><td>96pages</td><td>2.5</td></tr>
+   <tr><td>stylo</td><td>bleu</td><td>1.12</td></tr>
+   <tr><td>gomme</td><td>blanche</td><td>1.19</td></tr>
+   <tr><td>colle</td><td>en tube</td><td>1.69</td></tr>
+ </tbody>
+</table>
+</div>
+
+</body>
+</html>
