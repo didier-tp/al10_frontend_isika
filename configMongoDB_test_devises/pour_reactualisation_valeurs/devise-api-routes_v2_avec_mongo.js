@@ -1,6 +1,6 @@
 var express = require('express');
 const apiRouter = express.Router();
-var request = require("request");
+var request = require("request"); //ou bien axios (avec Promise)
 
 var myGenericMongoClient = require('./my_generic_mongo_client');
 
@@ -8,6 +8,19 @@ var myGenericMongoClient = require('./my_generic_mongo_client');
 var myMongoDbUrl = process.env.MONGO_DB_URL || "mongodb://127.0.0.1:27017/test"
 console.log("myMongoDbUrl="+myMongoDbUrl)
 myGenericMongoClient.setMongoDbUrl(myMongoDbUrl);
+
+compteur=0;
+function fonctionDeclencheePeriodiquement() {
+  compteur++;
+  console.log('compteur='+compteur);
+  if(compteur == 10)
+	  clearInterval(intervalObj);
+}
+
+const intervalObj = setInterval(fonctionDeclencheePeriodiquement, 5000); //toutes les 5000ms / 5s
+//si toutes les 24h : 24*60*60*1000
+//si besoin d'un déclenchement régulier plus précis
+//https://www.npmjs.com/package/node-cron plutôt que setInterval()
 
 function replace_mongoId_byCode(devise){
 	devise.code = devise._id;
