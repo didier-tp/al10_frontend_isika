@@ -1,7 +1,7 @@
  //V3 = V2 remaniée appelant sous fonction calculerOp(op,a,b)
  //dans calcul.js (pour test unitaire sur sous partie calcul.js)
  
- window.addEventListener("load",function(){
+ window.addEventListener("load",()=>{
 
 	var zoneCheckBox = document.getElementById("cbHisto");
 	zoneCheckBox.addEventListener("change",cacherOuMontrerHistorique);

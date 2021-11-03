@@ -18,6 +18,12 @@ var selectedProdRef = 'p1';  //référence vers produit séléctionné
 var mapSelProdQty = []; //map<selectedProd,qte> des produits avec quantité de la commande
 //clef = ref produit , valeur = quantite
 
+function affTabAssociatif(tab){
+	for(clef in tab){
+		console.log(clef + "-" + JSON.stringify(tab[clef]));
+	}
+}
+
 //NB: mapProduitsByRef , selectedProdRef , mapSelProdQty sont
 //à considérer comme des variables globales (visibles par toutes les fonctions)
 
@@ -30,6 +36,7 @@ function initSelProd(){
 		eltOption.value=refProd;
 		eltSelProd.appendChild(eltOption);
 	}
+	affTabAssociatif(mapProduitsByRef);
 }
 
 function addOrUpdateRowInTable(prodRef){
@@ -68,6 +75,7 @@ function deleteSelectedRowInTable(){
 			 eltTbody.deleteRow(i);
 		 }
 	 }
+	 affTabAssociatif(mapSelProdQty);
 }
 
 window.onload = function(){

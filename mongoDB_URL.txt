@@ -1,1 +1,9 @@
 mongodb://localhost:27017/test
+
+
+ou bien (base distante atlas):
+mongodb+srv://dbAdmin:MYPWD%21@cluster0.a570g.mongodb.net/test
+
+ou MYPWD est a remplacer par dba... ou ...007 ou ...... selon le mot de passe choisi .
+et dbAdmin=username et cluster0.a570g.mongodb.net = cluster mongoDB hébergé par Atlas
+et test=database name

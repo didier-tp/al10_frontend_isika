@@ -6,7 +6,7 @@
 
   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
   │ Cypress:    6.9.1                                                                              │
-  │ Browser:    Chrome 92                                                                          │
+  │ Browser:    Chrome 95                                                                          │
   │ Specs:      1 found (myTest.spec.js)                                                           │
   │ Searched:   cypress\integration\myTest.spec.js                                                 │
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
@@ -18,12 +18,12 @@
 
 
   My HTML/JS Tests
-    √ good addition in calculatriceV3.html (949ms)
-    √ good multiplication in calculatriceV3.html (2526ms)
-    √ Historique cache ou bien affiche (4805ms)
+    √ good addition in calculatriceV3.html (2846ms)
+    √ good multiplication in calculatriceV3.html (517ms)
+    √ Historique cache ou bien affiche (3916ms)
 
 
-  3 passing (10s)
+  3 passing (13s)
 
 
   (Results)
@@ -35,10 +35,18 @@
   │ Pending:      0                                                                                │
   │ Skipped:      0                                                                                │
   │ Screenshots:  0                                                                                │
-  │ Video:        false                                                                            │
-  │ Duration:     9 seconds                                                                        │
+  │ Video:        true                                                                             │
+  │ Duration:     13 seconds                                                                       │
   │ Spec Ran:     myTest.spec.js                                                                   │
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Video)
+
+  -  Started processing:  Compressing to 32 CRF                                                     
+  -  Finished processing: C:\tp\local-git-didier-tp-repositories\al10_frontend_isika\    (2 seconds)
+                          tp-js\basic_html_test_cypress\cypress\videos\myTest.spec.js               
+                          .mp4                                                                      
 
 
 ====================================================================================================
@@ -48,7 +56,7 @@
 
        Spec                                              Tests  Passing  Failing  Pending  Skipped  
   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
-  │ √  myTest.spec.js                           00:09        3        3        -        -        - │
+  │ √  myTest.spec.js                           00:13        3        3        -        -        - │
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
-    √  All specs passed!                        00:09        3        3        -        -        -  
+    √  All specs passed!                        00:13        3        3        -        -        -  
 

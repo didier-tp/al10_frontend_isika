@@ -7,5 +7,5 @@ initialisation : new ... or ...
     √ 2*3==6?
 
 
-  2 passing (10ms)
+  2 passing (6ms)
 
