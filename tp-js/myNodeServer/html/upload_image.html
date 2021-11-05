@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>upload_image</title>
+	<script src="js/my_ajax_util.js"></script>
+	<script src="js/upload_image.js"></script>
+</head>
+<body>
+    <h3>upload image with json publication</h3>
+	
+	<form encType="multipart/form-data">
+		<label>titre:</label><input type="text" id="txtTitre" /><br/>
+		<label>image:</label><input type="file" id="idImage" /><br/>
+	    <input type="button" id="btnSend" value="send/upload" /><br/>
+	</form>
+	<span id="spanMessage"></span>
+	<hr/>
+	image stockée et récupérée coté serveur: <br/>
+	<img id="idImg" ></img>
+</body>
+</html>

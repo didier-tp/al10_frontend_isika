@@ -1,0 +1,2 @@
+node reinit_produit_mongo_db.js
+pause

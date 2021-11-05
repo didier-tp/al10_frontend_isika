@@ -1,0 +1,2 @@
+node reinit_devise_mongo_db.js
+pause

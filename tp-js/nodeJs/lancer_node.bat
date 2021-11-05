@@ -1,0 +1,2 @@
+node basic_exemple_with_modules.js
+pause

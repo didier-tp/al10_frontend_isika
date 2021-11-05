@@ -1,0 +1,2 @@
+node reinit_produit_sqlite_db.js
+pause

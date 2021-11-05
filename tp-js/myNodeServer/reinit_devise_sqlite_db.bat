@@ -1,0 +1,2 @@
+node reinit_devise_sqlite_db.js
+pause

@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>ajax_prod</title>
+	<script src="js/my_ajax_util.js"></script>
+	<script src="js/ajax_prod.js"></script>
+</head>
+<body>
+    <h3>appels ajax vers produit-api (REST)</h3>
+	<table border="1">
+	  <thead>
+	    <tr><th>code</th><th>nom</th><th>prix</th></tr>
+	  </thead>
+	  <tbody id="bodyTableau">
+	  </tbody>
+	</table>
+
+	<form>
+		<label>code:</label><span id="spanCode"></span><br/>
+		<label>nom:</label><input type="text" id="txtNom" /><br/>
+		<label>prix:</label><input type="text" id="txtPrix" /><br/>
+	    <input type="button" id="btnUpdate" value="update" /><br/>
+	</form>
+	<span id="spanMessage"></span>
+</body>
+</html>
