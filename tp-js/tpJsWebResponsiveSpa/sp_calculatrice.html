@@ -1,0 +1,20 @@
+
+   <h1>calculatrice</h1>
+    x: <input id="x" type="text" /> <br/>
+    y=f(x): <input id="y" type="text" /> (ex: 2*x ou Math.sin(x) ) <br/>
+	<input type="button" value="calculer" onclick="onCalculer()" /> <br/>
+    res de f(x) = <span  id="spanResFx"></span> <br/>
+   <hr/>
+   a: <input id="a" type="text" /> <br/>
+   b: <input id="b" type="text" /> <br/>
+   <input type="button" onclick="calculerOperation('+')"  value="a+b"></input> 
+   <input type="button" onclick="calculerOperation('*')"  value="a*b"></input>
+   <input type="button" onclick="calculerOperation('-')"  value="a-b"></input> 
+   <input type="button" onclick="calculerOperation('/')"  value="a/b"></input><br/>
+   res = <span  id="spanRes"></span> <br/>
+   <br/>
+   <input type="checkbox" id="cbHisto" checked /> voir l'historique <br/>
+   <ul id="ulHistorique" class="visible-fade">
+      <!-- <li>2*3=6</li> -->
+   </ul>
+ 

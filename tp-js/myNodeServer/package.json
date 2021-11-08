@@ -11,9 +11,10 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-fileupload": "^1.2.1",
-    "mongodb": "^4.1.1",
+    "mongodb": "^4.1.4",
     "mongoose": "^5.12.5",
     "mongoose-auto-increment": "^5.0.1",
+    "request": "^2.88.2",
     "sqlite3": "^5.0.2"
   }
 }

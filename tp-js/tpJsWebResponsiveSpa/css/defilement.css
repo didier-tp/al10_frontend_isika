@@ -1,0 +1,35 @@
+/* ---------------------------- */
+/* Défilement de droite à gauche (rtl : right to left) */
+.marquee-rtl {
+  overflow: hidden; /* important */
+  width:60%; max-width: 30em; /* A ADAPTER */
+}
+.marquee-rtl > :first-child {
+  display: inline-block; /* important */
+  white-space: nowrap; /* important */
+  animation: defilement-rtl 15s infinite linear; /* animation defilement-rtl sur 15s répétée de manière infinie */
+  cursor: pointer;
+  padding: 10px 2em 10px 100%;
+}
+.marquee-rtl:hover > :first-child {
+  animation-play-state: paused; /* met en pause le défilement */
+}
+.marquee-rtl > :first-letter {
+  font-weight: 700;
+  color: #F00;
+}
+@keyframes defilement-rtl {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+.marquee-deco {
+  margin: 2em auto;  /* auto important pour conteneur centré*/
+  border: 7px solid #F0F0FF;
+  box-shadow: 0 .25em .5em #CCC,inset 0 0 1em .25em #CCC;
+}
+

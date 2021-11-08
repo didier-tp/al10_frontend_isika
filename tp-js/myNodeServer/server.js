@@ -1,7 +1,7 @@
 var express = require('express');
 var fileUpload  = require('express-fileupload');
-var deviseApiRoutes = require('./devise-api-routes_v1_sans_mongo');
-//var deviseApiRoutes = require('./devise-api-routes_v2_avec_mongo');
+//var deviseApiRoutes = require('./devise-api-routes_v1_sans_mongo');
+var deviseApiRoutes = require('./devise-api-routes_v2_avec_mongo');
 //var deviseApiRoutes = require('./devise-api-routes_v3_avec_sqlite');
 //var deviseApiRoutes = require('./devise-api-routes_v4_avec_mongoose');
 var produitApiRoutes = require('./produit-api-routes_memory');
@@ -12,7 +12,8 @@ var uploadApiRoutes = require('./upload-api-routes');
 var app = express();
 
 //support parsing of JSON post data
-var jsonParser = express.json({  extended: true}); //bodyParser.json({  extended: true}) ;
+var jsonParser = express.json({  extended: true}); 
+//bodyParser.json({  extended: true}) ;
 app.use(jsonParser);
 
 //support for fileUpload: {  debug: true,  limits: { fileSize: 5 * 1024 * 1024 },}

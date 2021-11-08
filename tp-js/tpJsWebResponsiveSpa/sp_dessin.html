@@ -1,0 +1,25 @@
+
+<div id="divDessin">
+   <h3>dessin (via canvas)</h3>
+   typeFig : <input type="radio" name="typeFig" value="ligne" checked
+                    id="typeFigLigne" onclick="setTypeFig('ligne')"/> <label for="typeFigLigne">ligne</label>
+		&nbsp;	<input type="radio" name="typeFig"  value="rect"
+                    id="typeFigRect" onclick="setTypeFig('rect')" /> <label for="typeFigRect">rect</label>
+        &nbsp;   <input type="radio" name="typeFig" value="cercle"
+                    id="typeFigCercle" onclick="setTypeFig('cercle')" /> <label for="typeFigCercle">cercle</label>					
+		<br/>
+  couleur : <select id="selCouleur" > 
+                 <option value="black" checked>noir</option>
+                 <option value="red">rouge</option>
+				 <option value="green">vert</option>
+				 <option value="blue">bleu</option>
+             </select> <input type="checkbox" id="cbEmpty" checked /> <label for="cbEmpty">empty (no fill)</label><br/>
+		<canvas id="myCanvas"  width="350" height="200" 
+		        style="border:1px solid #000000;">
+			</canvas>  <br/>
+		<input type='button' value="clear" onclick="clear_canvas()" />
+			<hr/>
+		<div id="my_status_msg" ></div>
+	</div>
+
+  

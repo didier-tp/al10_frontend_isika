@@ -12,6 +12,8 @@ Depuis la v4 , mongoimport n'est plus installépar défaut
 mais l'interface graphique mongoCompass est maintenant installée par défaut.
 
 URL base locale:
+mongodb://superuser:motdepasse@localhost:27017
+mongodb://localhost:27017
 mongodb://localhost:27017/test
 mongodb://localhost:27017/test?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false
 

@@ -1,0 +1,31 @@
+
+   <h1>media (audio, video)</h1>
+   
+   <h3>BWV565.mp3 (Bach):</h3>
+  <audio controls >
+    <source src="audio/BWV565.mp3" />
+	texte affiché seulement par navigateur 
+	ne supportant pas la balise audio HTML5
+  </audio>
+   <hr/>
+  <h3>Video via balise video/html5:<h3>
+  <video controls width='400' height='300'>
+    <source src="video/video2.mp4" />
+	<!-- attention : track (pour fichier sous-titres)
+	     accede bien au fichier .vtt qu'en mode http -->
+	<track default kind="captions"
+           srclang="fr"
+           src="video/video2-captions.vtt"/>
+	texte affiché seulement par navigateur 
+	ne supportant pas la balise video HTML5
+	possibilite d'imbriquer ici balise object (en plan B)
+	pour anciens navigateurs
+	    <object  width='400' height='400'
+           type="video/mp4" data="video/video2.mp4"
+        />
+  </video>
+    
+	
+
+ 
+ 

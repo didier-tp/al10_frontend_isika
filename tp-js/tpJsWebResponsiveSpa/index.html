@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>tpJsWebResponsiveSpa</title>
+ <link rel="stylesheet" href="./css/bootstrap.min.css">
+ <!-- <link rel="stylesheet" href="./css/my-custom-bootstrap.css"> -->
+ 
+ <link rel="stylesheet" type="text/css" href="css/layout.css" />
+ <link rel="stylesheet" type="text/css" href="css/styles.css" />
+ <link rel="stylesheet" type="text/css" href="css/defilement.css" />
+ <link rel="stylesheet" type="text/css" href="css/avec-transparence.css" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- for responsive bootstrap on mobile device -->
+ <script src="lib/jquery-3.3.1.min.js"></script>
+ <script src="lib/bootstrap.bundle.min.js"></script>
+
+ <script src="js/my_ajax_util.js"></script>
+ <script src="js/my_spa_util.js"></script>
+<script>
+
+function switchContent(partName){
+ switch(partName){
+	case "euroToFranc" :
+	    loadJsScript("js/euroToFranc.js", function(){
+		   loadSubPart("idAlternativeSubPart","sp_euroToFranc.html","startEuroToFranc()")
+		});	break;
+	case "graph" :
+	    loadJsScript("lib/chart.2.7.3.min.js");
+		loadJsScript("js/graph.js", function(){
+			loadSubPart("idAlternativeSubPart","sp_graph.html","startGraph()")
+		});	break;
+	case "calculatrice" :
+		loadJsScript("js/calculatrice.js", function(){
+			loadSubPart("idAlternativeSubPart","sp_calculatrice.html","startCalculatrice()")
+		});	break;
+	case "effets" :
+		loadJsScript("js/effets.js", function(){
+			loadSubPart("idAlternativeSubPart","sp_effets.html","startEffets()")
+		});	break;
+	case "transparence" :
+		loadJsScript("js/transparence.js", function(){
+			loadSubPart("idAlternativeSubPart","sp_transparence.html","startTransparence()")
+		});	break;
+	case "media" :
+		loadJsScript("js/media.js", function(){
+			loadSubPart("idAlternativeSubPart","sp_media.html","startMedia()")
+		});	break;
+	case "dom_crud_devise" :
+		loadJsScript("js/dom_crud_devise.js", function(){
+			loadSubPart("idAlternativeSubPart","sp_dom_crud_devise.html","startDomCrudDevise()")
+		});	break;
+	case "dessin" :
+		loadJsScript("js/dessin.js", function(){
+			loadSubPart("idAlternativeSubPart","sp_dessin.html","startDessin()")
+		});	break;
+	case "news" :
+		loadJsScript("js/news.js", function(){
+			loadSubPart("idAlternativeSubPart","sp_news.html","startNews()")
+		});	break;
+	case "welcome" :
+	default:
+		loadJsScript("js/welcome.js", function(){
+			loadSubPart("idAlternativeSubPart","sp_welcome.html","start_welcome()")
+		});	break;
+	}
+}
+
+window.onload=function(){
+		switchContent("welcome");
+}
+</script>
+</head>
+<body>
+   <header class="stickyHeader">
+      <!-- <h3 id="appTitle">My-App</h3> -->
+		<!-- <nav class="navbar navbar-expand-sm navbar-light bg-faded" > -->
+		<!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark"> -->
+		<nav class="navbar navbar-expand-sm bg-light navbar-light">
+		 <button class="navbar-toggler" type="button" 
+		data-toggle="collapse" data-target="#nav-content" 
+		aria-controls="nav-content" aria-expanded="false" 
+		aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Brand -->
+		<a class="navbar-brand" href="#" onclick="switchContent('welcome')">MyApp</a>
+
+		<!-- Links -->
+		<div class="collapse navbar-collapse" id="nav-content">   
+		 <ul class="navbar-nav">
+			<li class="nav-item">
+			  <a class="nav-link" href="#" onclick="switchContent('euroToFranc')">EuroToFranc</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#" onclick="switchContent('graph')">Graph </a>
+			</li>
+			<li class="nav-item dropdown">
+		<a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+		Autres
+		</a>
+			<div class="dropdown-menu" aria-labelledby="Preview">
+			<a class="dropdown-item" href="#" onclick="switchContent('calculatrice')">calculatrice</a>
+			<a class="dropdown-item" href="#" onclick="switchContent('dessin')">dessin</a>
+			<!-- <li role="separator" class="divider"></li> -->
+			<a class="dropdown-item" href="#"onclick="switchContent('dom_crud_devise')">domCrudDevises</a>
+			<a class="dropdown-item" href="#"onclick="switchContent('news')">news</a>
+			<a class="dropdown-item" href="#"onclick="switchContent('welcome')">welcome</a>
+			<a class="dropdown-item" href="#"onclick="switchContent('effets')">effets divers</a>
+			<a class="dropdown-item" href="#"onclick="switchContent('transparence')">fontes, transparence et autres effets</a>
+			<a class="dropdown-item" href="#"onclick="switchContent('media')">media (audio , video)</a>
+			</div>
+			</li>
+		</ul>   
+		</div>
+	</nav>
+   </header>
+   <main id="mainContent" class="mainContentUnderStickyHeader mainContentAboveStickyFooter">
+      <section class="container-fluid">
+	    <div id="idAlternativeSubPart">...</div>
+	  </section>
+   </main>
+   <footer class="stickyFooter">
+	  <h4>pied de page (liens, mentions légales)</h4>
+   </footer>
+</body>
+</html>

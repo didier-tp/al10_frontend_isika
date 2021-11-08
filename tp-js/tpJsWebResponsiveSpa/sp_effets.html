@@ -1,0 +1,60 @@
+
+   <h1>divers effets css</h1>
+    
+   <hr/>
+   <pre>
+   @keyframes flash-anim {
+		0% {opacity: 1;}
+		25% {opacity: 0;}
+		50% {opacity: 1;}
+		75% {opacity: 0;}
+		100% {opacity: 1;}
+    }	
+    .myflash:hover { animation: flash-anim 3s;}	
+   
+    .rond { transition: .3s ease-in-out;}
+    .rond:hover { border-radius : 50% ; }
+   </pre>  
+   <div class="mybox">
+       <div class="mycell"><img class="rond" src="images/clementine.jpeg" /></div> 
+       <div class="mycell"><img class="rond" src="images/pont.jpg" /></div>  
+       <div class="mycell"><img class="myflash" src="images/fleur.jpeg" /></div> 
+  </div>
+   <hr/>
+   <pre>
+    .small-zoom {  transform: scale(0.98);  transition: 0.6s;}
+    .small-zoom:hover {  transform: scale(1);  border-width: 4px; 
+	  border-style: solid;  border-color: red;}
+						  
+    .tournerSurSoiMeme:hover { transform: rotate(360deg); transition: all 0.5s ease;}
+	
+    .noirEtblanc { filter: grayscale(100%);  transition: .3s ease-in-out;}
+    .noirEtblanc:hover { filter: grayscale(0); }
+
+   </pre>  
+   <div class="mybox">
+       <div class="mycell"><img class="noirEtBlanc tournerSurSoiMeme" src="images/clementine.jpeg" /></div> 
+       <div class="mycell"><img class="noirEtBlanc small-zoom" src="images/pont.jpg" /></div>  
+       <div class="mycell"><img class="noirEtBlanc tournerSurSoiMeme" src="images/fleur.jpeg" /></div> 
+  </div>
+  
+  <hr/>
+  <pre>
+  @keyframes rotation-anim {
+    0% { transform: rotateY(95deg);}
+    50% { transform: rotateY(90deg);}
+	100% {transform: rotateY(0deg);}
+   }	
+	
+  .apparitionRotative.visibleAfterScroll {
+     animation: rotation-anim 3s;
+  }	
+  + code activant .visibleAfterScroll lors du scroll dans js/effets.js
+  </pre>
+  <div class="divA apparitionRotative">
+  azerty <br>
+     ...........123456789
+  </div>
+
+ 
+ 

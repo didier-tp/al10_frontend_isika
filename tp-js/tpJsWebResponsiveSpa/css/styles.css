@@ -1,0 +1,219 @@
+/*alternative names for media-query mixins :
+media-min or respond-below or media-breakpoint-down
+, media-max or respond-above ,  media-between or respond-between */
+@import "common.css";
+@media screen and (max-width: 575px) {
+  h3 {
+    font-size: 80%;
+    color: black;
+  }
+}
+@media screen and (min-width: 576px) {
+  h3 {
+    font-size: 100%;
+    color: green;
+  }
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 130%;
+    color: blue;
+  }
+}
+@media screen and (min-width: 992px) {
+  h3 {
+    font-size: 160%;
+    color: red;
+  }
+}
+
+.enEvidence {
+  font-weight: bold;
+  color: red !important;
+}
+
+p {
+  font-size: 1.6em;
+}
+
+label.simpleAlign {
+  width: 8em;
+  display: inline-block;
+  text-align: right;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(2n) {
+  color: black;
+  background-color: white;
+}
+
+tbody tr:nth-child(2n+1) {
+  color: white;
+  background-color: black;
+}
+
+thead th {
+  background-color: yellow;
+}
+
+.c-fieldset {
+  padding: 0.5em;
+  margin: 0.5em;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+}
+
+.c-legend {
+  width: inherit;
+  /* Or auto */
+  padding: 0 10px;
+  /* To give a bit of padding on the left and right */
+  border-bottom: none;
+}
+
+.small-zoom {
+  transform: scale(0.92);
+  transition: 0.6s;
+}
+
+.small-zoom:hover {
+  transform: scale(1);
+  border-width: 4px;
+  border-style: solid;
+  border-color: red;
+}
+
+.visible-fade {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+.hidden-fade {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.mybox {
+  background-color: lightyellow;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.mywrapbox {
+  padding: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.myitem {
+  flex: 1 1 auto;
+  text-align: center;
+  padding: 2px;
+  margin: 8px;
+}
+
+.mycell {
+  flex: 1 1 auto;
+  padding: 10px;
+  margin: 10px;
+  /* background-color: green;
+     border: 1px solid red; */
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* pour shrink sur images si trop grandes */
+.rond {
+  transition: 0.3s ease-in-out;
+}
+
+.rond:hover {
+  border-radius: 50%;
+}
+
+.noirEtblanc {
+  filter: grayscale(100%);
+  transition: 3s ease-in-out;
+}
+
+.noirEtblanc:hover {
+  filter: grayscale(0);
+}
+
+.tournerSurSoiMeme:hover {
+  transform: rotate(360deg);
+  transition: all 0.5s ease;
+}
+
+@keyframes flash-anim {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.myflash:hover {
+  animation: flash-anim 3s;
+}
+
+@keyframes rotation-anim {
+  0% {
+    transform: rotateY(95deg);
+  }
+  50% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+.apparitionRotative.visibleAfterScroll {
+  animation: rotation-anim 3s;
+}
+
+.boutonRondCarre {
+  border-radius: 12px 0 12px 0;
+  background: #f5f5f5;
+  border: none;
+  color: #555;
+  font: bold 12px Verdana;
+  padding: 6px 0 6px 0;
+  border: 1px solid #ccc;
+}
+
+.boutonCoinArrondi {
+  border: none;
+  padding: 6px 0 6px 0;
+  border-radius: 8px;
+  background: #f5f5f5;
+  font: bold 13px Arial;
+  color: #555;
+}
+
+.divA {
+  background-color: yellow;
+  color: blue;
+  width: 200px;
+  height: 200px;
+}
+
+/*# sourceMappingURL=styles.css.map */

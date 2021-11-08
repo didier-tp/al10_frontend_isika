@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/*
+linear-gradient(black, white, ...) sert à construire une image 
+avec des couleurs en dégradé du noir au blanc.
+Etant donné que linear-gradient gère bien la transparence 
+(coefficient d'opacité alpha) , on peut utiliser linear-gradient()
+avec 2 fois la même couleur rgba(0, 0, 0, 0.5) pour obtenir un effet de transparence.
+si coeff alpha proche de 0 très transparent.
+si coeff alpha proche de 1 très opaque.
+*/
+.degradeDeBleu {
+  background: linear-gradient(to bottom right, rgba(20, 13, 92, 0.9), rgba(255, 255, 255, 0.9));
+  box-shadow: 4px 4px grey;
+}
+
+.overImage1 {
+  background-color: #000000;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/coucher_soleil.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  padding: 1em;
+  text-align: center;
+}
+
+.overImage2 {
+  background-color: #000000;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/pont.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  padding: 1em;
+  text-align: center;
+}
+
+/*
+HSL signifie Hue, Saturation, Luminosity, 
+c’est à dire Teinte, Saturation, Luminosité
+https://la-cascade.io/utiliser-hsl-pour-vos-couleurs/
+*/
+@keyframes wheelHueColor {
+  from, to {
+    color: #c32283;
+  }
+  10% {
+    color: #bd2828;
+  }
+  20% {
+    color: #cf8517;
+  }
+  30% {
+    color: #819c16;
+  }
+  40% {
+    color: #36931f;
+  }
+  50% {
+    color: #169c4c;
+  }
+  60% {
+    color: #169c9c;
+  }
+  70% {
+    color: #2e65b8;
+  }
+  80% {
+    color: #4e2dd2;
+  }
+  90% {
+    color: #8b29a3;
+  }
+}
+.animTextColor {
+  color: #c32283;
+  animation: wheelHueColor 60s infinite;
+}
+
+.animBackgroundColor {
+  flex-flow: row wrap;
+  align-items: center;
+  color: #c32283;
+  animation: wheelHueColor 100s infinite;
+  background-color: currentColor;
+  background-image: linear-gradient(45deg, white 10%, black 90%);
+  background-blend-mode: overlay;
+}
+
+/*
+
+
+*/
+.textOverAnimeBackColor {
+  display: inline-block;
+  flex: 1 1 auto;
+  margin: 3em;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 1em;
+  animation: inherit;
+}
+
+/*# sourceMappingURL=avec-transparence.css.map */
