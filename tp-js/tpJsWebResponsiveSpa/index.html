@@ -1,8 +1,8 @@
 <html>
 <head>
 <title>tpJsWebResponsiveSpa</title>
- <link rel="stylesheet" href="./css/bootstrap.min.css">
- <!-- <link rel="stylesheet" href="./css/my-custom-bootstrap.css"> -->
+ <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+ <link rel="stylesheet" href="./css/my-custom-bootstrap.css"> 
  
  <link rel="stylesheet" type="text/css" href="css/layout.css" />
  <link rel="stylesheet" type="text/css" href="css/styles.css" />
@@ -48,7 +48,7 @@ function switchContent(partName){
 			loadSubPart("idAlternativeSubPart","sp_dom_crud_devise.html","startDomCrudDevise()")
 		});	break;
 	case "dessin" :
-		loadJsScript("js/dessin.js", function(){
+		loadJsScript("js/dessin_solution.js", function(){
 			loadSubPart("idAlternativeSubPart","sp_dessin.html","startDessin()")
 		});	break;
 	case "news" :

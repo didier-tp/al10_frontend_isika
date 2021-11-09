@@ -1,0 +1,14 @@
+//before/first : our customization (variables override)
+$theme-colors: (
+  "primary": #11640f,
+  "secondary":  #66b863,
+  "success":    #426e40,
+  "info":       #2a1158,
+  "warning":    #f17f14,
+  "danger":    #6d2c29 ,
+  "light":     #f8f7a6,
+  "dark":      #292b29
+  );
+  
+//after : default bootstrap scss
+@import "bootstrap-scss/bootstrap";

@@ -2,6 +2,11 @@
 media-min or respond-below or media-breakpoint-down
 , media-max or respond-above ,  media-between or respond-between */
 @import "common.css";
+
+@import "_variables.scss";
+
+
+
 @media screen and (max-width: 575px) {
   h3 {
     font-size: 80%;
@@ -23,12 +28,13 @@ media-min or respond-below or media-breakpoint-down
 @media screen and (min-width: 992px) {
   h3 {
     font-size: 160%;
-    color: #176d23;
+    color: $couleurPref;
   }
 }
+
 .enEvidence {
   font-weight: bold;
-  color: #176d23 !important;
+  color: $couleurPref !important;
 }
 
 p {
@@ -214,7 +220,5 @@ img {
   width: 200px;
   height: 200px;
 }
-
-/*# sourceMappingURL=styles.css.map */
 
 /*# sourceMappingURL=styles.css.map */
