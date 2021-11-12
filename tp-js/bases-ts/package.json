@@ -1,0 +1,18 @@
+{
+  "name": "bases-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^16.9.1",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
+}

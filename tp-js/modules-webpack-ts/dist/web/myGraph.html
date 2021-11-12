@@ -1,0 +1,31 @@
+<html>
+<head>
+      <script src="../lib/chart.2.7.3.min.js"></script>
+    <!--
+      <script src="../out-tsc/Serie.js"></script>
+      <script src="../out-tsc/MyGraph.js"></script> 
+      <script src="../out-tsc/htmlGraph.js"></script>
+    -->
+      <script src="../build/main-bundle.js"></script>
+     
+<body>
+    <div id="divGraph">
+       liste pays: <input type='text' id='txtListePays' size='64'
+                     value='France,Allemagne,Italie,Espagne,Belgique' /> <br/>
+       liste valeurs: <input type='text' id='txtListeValeurs' 
+                      value='23,16,18,8,5' size='64' /> <br/>   
+       chart type: <select id="selTypeChart" >
+             <option>pie</option>
+             <option>bar</option>
+             <option>line</option>
+             <option>doughnut</option>
+             <option>horizontalBar</option>
+       </select> <br/>
+       <input type='button' value="refresh chart" id="btnRefresh" /> <br/>
+        <canvas id="myCanvas" width="500" height="400" style="border:1px solid #000000;">
+	 </canvas>
+	<hr/>
+      <span id="spanMsg"></span> <br/>
+	</div>
+</body>
+</html>

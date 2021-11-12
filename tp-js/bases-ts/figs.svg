@@ -1,0 +1,7 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='600' height='600'>
+<line x1='20' y1='20' x2='180' y2='200'  style='stroke:red;stroke-width:1;fill:none' />
+<circle cx='100' cy='100' r='50' style='stroke:blue;stroke-width:1;fill:none' />
+<circle cx='250' cy='200' r='50' style='stroke:black;stroke-width:2;fill:blue' />
+<rect x='200' y='100' width='50' height='60' style='stroke:green;stroke-width:1;fill:none' />
+<rect x='20' y='100' width='50' height='60' style='stroke:black;stroke-width:3;fill:green' />
+</svg>

@@ -1,0 +1,7 @@
+[
+{"typeFig":"line","lineColor":"red","lineWidth":1,"x1":20,"y1":20,"x2":180,"y2":200}
+,{"typeFig":"circle","lineColor":"blue","lineWidth":1,"xC":100,"yC":100,"r":50}
+,{"typeFig":"circle","lineColor":"black","lineWidth":2,"fillColor":"blue","xC":250,"yC":200,"r":50}
+,{"typeFig":"rectangle","lineColor":"green","lineWidth":1,"x1":200,"y1":100,"width":50,"height":60}
+,{"typeFig":"rectangle","lineColor":"black","lineWidth":3,"fillColor":"green","x1":20,"y1":100,"width":50,"height":60}
+]

@@ -1,0 +1,26 @@
+
+> mynodeserver@1.0.0 test D:\tp\local-git-didier-tp-repositories\isikadev5_frontend\tpNodeJs\myNodeServerTs
+> mocha dist/test --reporter spec
+
+http://localhost:undefined
+rest express node server listening at undefined
+
+
+  devise api
+    getDeviseByCode
+MyMongoConnection, trying openConnection with dbUrl=mongodb://localhost:27017/test
+      √ returns status 200 and a devise object with good name (75ms)
+
+  internal deviseService
+    getAllDevises
+      √ returning at least 4 devises
+    getDeviseByCode
+deviseEur:{"nom":"Euro","change":1,"code":"EUR"}
+      √ euro for code EUR
+deviseRelue (after saveOrUpdate):{"nom":"devise a1","change":123,"code":"Da1"}
+      √ saveOrUpdate_et_getByIdEnchaine
+
+
+  4 passing (96ms)
+
+Terminer le programme de commandes (O/N)�? 

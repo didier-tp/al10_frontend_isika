@@ -1,0 +1,17 @@
+{
+  "name": "modules-webpack-ts",
+  "version": "1.0.0",
+  "description": "blabla",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && webpack && webpack --config ./webpack.config2.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack-watch": "webpack --watch"
+  },
+  "author": "didier",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
+}
