@@ -23,7 +23,7 @@ describe("my simpleAsync tests", function () {
     it("abc shoud be ABC in upperCase with returned Promise ", function () {
         return simpleAsync.getUppercaseDataAfterDelay("abc",500)
         .then( (s)=> { expect(s).to.equals("ABC"); })
-        .catch( (err) => { expect.fail(err); })
+        .catch( (err) => { expect.fail(<string>err); })
     }); 
     
     it("abc shoud be ABC in upperCase with async/await", async function () {
@@ -31,7 +31,7 @@ describe("my simpleAsync tests", function () {
             const s = await simpleAsync.getUppercaseDataAfterDelay("abc",500);
             expect(s).to.equals("ABC");
         }catch( err)  { 
-            expect.fail(err); 
+            expect.fail( <string>err); 
         }
     });
     

@@ -1,19 +1,35 @@
 
 
   MyAsyncSequence tests
-    ✔ account with .num==2 when calling getAccountByNumAfterDelay(2,500) (512ms)
-    ✔ user with .userId==6 when calling getUserByIdAfterDelay(6,500) (507ms)
+    √ account with .num==2 when calling getAccountByNumAfterDelay(2,500) (508ms)
+    √ user with .userId==6 when calling getUserByIdAfterDelay(6,500) (512ms)
 
   my simpleAsync tests
 initialisation : new ... or ...
-    ✔ abc shoud be ABC in upperCase with returned Promise  (509ms)
+    1) abc shoud be ABC in upperCase with returned Promise 
 initialisation : new ... or ...
-    ✔ abc shoud be ABC in upperCase with async/await (523ms)
+    2) abc shoud be ABC in upperCase with async/await
 
 
-  4 passing (2s)
+  2 passing (2s)
+  2 failing
+
+  1) my simpleAsync tests
+       abc shoud be ABC in upperCase with returned Promise :
+     AssertionError: AssertionError: expected 'ABC**' to equal 'ABC'
+      at C:\tp\local-git-didier-tp-repositories\al10_frontend_isika\tp-js\bases-ts\dist\test\simpleAsync-spec.js:63:44
+
+  2) my simpleAsync tests
+       abc shoud be ABC in upperCase with async/await:
+     AssertionError: AssertionError: expected 'ABC**' to equal 'ABC'
+      at Context.<anonymous> (dist\test\simpleAsync-spec.js:79:32)
+      at step (dist\test\simpleAsync-spec.js:33:23)
+      at Object.next (dist\test\simpleAsync-spec.js:14:53)
+      at fulfilled (dist\test\simpleAsync-spec.js:5:58)
+
+
 
 aff err account:invalid account number : 0
 user (owner of account):undefined
-account:{"num":8,"balance":256.28844009624885,"ownerId":16}
-user (owner of account):{"userId":16,"firstName":"firstName_16","lastName":"lastname16"}
+account:{"num":8,"balance":643.627863515071,"ownerId":26}
+user (owner of account):{"userId":26,"firstName":"firstName_26","lastName":"lastname26"}

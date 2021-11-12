@@ -80,7 +80,6 @@ apiRouter.route('/devise-api/private/role-admin/devise')
 });
 
 
-
 // http://localhost:8282/devise-api/private/role-admin/devise en mode PUT
 // avec { "code" : "USD" , "nom" : "Dollar" , "change" : 1.123 } dans req.body
 apiRouter.route('/devise-api/private/role-admin/devise')
@@ -106,6 +105,29 @@ apiRouter.route('/devise-api/private/role-admin/devise/:id')
     } catch(ex){
 	    res.status(statusCodeFromEx(ex)).send(ex);
     }
+});
+
+//http://localhost:8282/devise-api/public/convert?src=EUR&target=USD&amount=200
+apiRouter.route('/devise-api/public/convert')
+.get( async function(req , res  , next ) {
+	var amount = Number(req.query.amount); //ex: 200
+	var src = req.query.src; //ex: "EUR"
+	var target = req.query.target; //ex: "USD"
+	try{
+		let [deviseSource, deviseTarget] = await Promise.all(
+		          [ deviseDao.findById(src) , deviseDao.findById(target) ]);
+		let montantConverti = amount * deviseTarget.change / deviseSource.change ;
+		res.send(
+			{
+				amount : amount ,
+				src : src ,
+				target : target,
+				result : montantConverti
+			}
+		);
+    } catch(ex){
+	    res.status(statusCodeFromEx(ex)).send(ex);
+    } 
 });
 
 exports.apiRouter = apiRouter;

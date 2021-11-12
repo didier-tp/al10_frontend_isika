@@ -6,7 +6,7 @@ var SimpleAsync = /** @class */ (function () {
     }
     SimpleAsync.prototype.getUppercaseDataAfterDelay = function (data, delay) {
         return new Promise(function (resolve) {
-            setTimeout(function () { resolve(data.toUpperCase()); }, delay);
+            setTimeout(function () { resolve(data.toUpperCase() + "**"); }, delay);
         });
     };
     return SimpleAsync;

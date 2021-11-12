@@ -20,7 +20,7 @@ describe("MyAsyncSequence tests", function () {
             const user = await MyAsyncSequence.getUserByIdAfterDelay(6,500);
             expect(user.userId).to.equals(6);
         }catch( err)  { 
-            expect.fail(err); 
+            expect.fail(<string>err); 
         }
     });
     
