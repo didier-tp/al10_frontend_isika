@@ -172,10 +172,11 @@ apiRouter.route('/devise-api/public/refresh')
 				}
 				res.send(respValue);
 			}else{
-				res.status(500).send({ err : "error - " + error } );
+				res.status(500).send({ err : "error - "} );
 			}
 		  } catch (error) {
 			console.error(error);
+			res.status(500).send({ err : "error - " + error} );
 		  }
 		
 		
