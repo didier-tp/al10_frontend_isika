@@ -42,6 +42,7 @@ var InteractiveComputer = /** @class */ (function () {
             process.exit();
         })
             .catch(function (err) { console.log(err); process.exit(); });
+        console.log("enchainement de traitements enregistré");
     };
     return InteractiveComputer;
 }());

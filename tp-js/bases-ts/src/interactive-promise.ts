@@ -39,6 +39,7 @@ export class InteractiveComputer{
                         process.exit();
         })
         .catch((err)=>{console.log(err);process.exit();});
+		//console.log("enchainement de traitements enregistré");
     }
 
 }

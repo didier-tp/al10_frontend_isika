@@ -19,7 +19,7 @@ function statusCodeFromEx(ex){
 }
 
 //exemple URL: http://localhost:8282/devise-api/private/role-admin/reinit
-apiRouter.route('/deviseession-api/private/role-admin/reinit')
+apiRouter.route('/devise-api/private/role-admin/reinit')
 .get( async function(req , res  , next ) {
 	try{
 		let doneActionMessage = await deviseDao.reinit_db();
@@ -32,7 +32,7 @@ apiRouter.route('/deviseession-api/private/role-admin/reinit')
 //exemple URL: http://localhost:8282/devise-api/public/devise/EUR
 apiRouter.route('/devise-api/public/devise/:id')
 .get( async function(req , res  , next ) {
-	var iddevise = req.params.id;//Number(req.params.id); in old v1 with auto_incr
+	var iddevise = req.params.id;
    /*
    //V1 (direct use of mogoose PersistentdeviseModel):
 	PersistentdeviseModel.findById(iddevise ,	function(err,devise){
@@ -54,9 +54,8 @@ apiRouter.route('/devise-api/public/devise/:id')
 //             http://localhost:8282/devise-api/public/devise?changeMini=1.05
 apiRouter.route('/devise-api/public/devise')
 .get( async function(req , res  , next ) {
-	var changeMini = req.query.changeMini;
-	var criteria={};
-	//....
+	var changeMini = Number(req.query.changeMini);
+	var criteria=changeMini?{ change: { $gte: changeMini }  }:{};
 	try{
 		let devises = await deviseDao.findByCriteria(criteria);
 		res.send(devises);

@@ -1,6 +1,7 @@
 import { Employe } from "./employes";
 import { IPerson, Personne } from "./personnes";
 
+
 let p1 : Personne;
 p1 = new Personne();
 if( p1 instanceof Employe){
@@ -37,7 +38,7 @@ obj = { numero : 2}
 
 //données souvent recupérées via HTTP
 let persJsonString = '{ "numero":2 , "nom" : "titi" , "prenom" : "p" } ';
-let persJs :IPrson = JSON.parse(persJsonString);
+let persJs :IPerson = JSON.parse(persJsonString);
 //let persJs :IPerson = <IPerson> ( <any> JSON.parse(persJsonString) );
 //avec castings explicites dans les cas pointus
 
