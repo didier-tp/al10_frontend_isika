@@ -1,0 +1,8 @@
+BSU au sens BootStrap-Util 
+Bibliotheque de composants utilitaires pour simplifier 
+l'utilisation de bootstrap 4 dans angular 6,7,8
+
+BSU s'appuie sur Bootstrap4.css 
+et quelquefois sur ngx-bootstrap
+mais jamais sur jquery.js ni popper.js
+

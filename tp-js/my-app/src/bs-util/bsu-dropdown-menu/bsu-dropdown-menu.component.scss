@@ -1,0 +1,34 @@
+@import "../css/base";
+/*
+indispensable en plus de (mouseenter)="dropdown.show()" 
+et (mouseleave)="dropdown.hide()"
+*/
+.dropdown:hover>.dropdown-menu {
+    display: block !important ;
+  }
+
+
+  
+  /*
+  margin-top : 0 !important ; indispensable pour pas trop tôt re-caché
+  */
+.dropdown-menu {
+    margin-top : 0 !important ;
+    padding : 0;
+}
+
+
+a.nav-link  , div.dropdown-menu{
+  color:  myColor(txt-inv-primary) !important;
+  background-color: myColor(bg-primary) !important;
+}
+
+
+a.nav-link:hover {
+  color:  myColor(txt-inv-hl-primary) !important;
+  background-color: myColor(bg-primary) !important;
+}
+
+
+
+  

@@ -1,0 +1,26 @@
+@import "../css/base";
+.disabled-link { display : none; }
+/* .disabled-link {  border-left: 5px solid red;  } */
+
+
+ a.nav-link , a.dropdown-item {
+    color:  myColor(txt-inv-primary) !important;
+    background-color: myColor(bg-primary) !important;
+  }
+
+  a.nav-link.active , a.dropdown-item.active {
+    color:  myColor(txt-inv-primary) !important;
+    background-color: myColor(bg-hl-primary) !important;
+  }
+  
+  
+   a.nav-link:hover , a.dropdown-item:hover{
+    color:  myColor(txt-inv-hl-primary) !important;
+    background-color: myColor(bg-primary) !important;
+  }
+  .dropdown-item {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }

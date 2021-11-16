@@ -1,0 +1,90 @@
+
+/* polices correctes : Times , Arial , Tahoma, Verdana */
+p { font-size: 14pt ;  font-family: "Tohama"; }
+
+.ordinaire { font-size: 14pt ;  font-family: "Tohama"; }
+
+.au-centre { text-align: center!important; }
+.justifie { text-align : justify; }
+.appuye { font-weight: bold;}
+.fondVert { background-color:   #5aa3e2 ; }
+.panel-default > .panel-heading { 
+   background-color:   #499de5;
+   color : white;
+}
+
+a:hover {
+  text-decoration: underline!important;
+}
+
+a.nav-link:hover {
+  text-decoration-color: #499de5!important;
+}
+
+/* titre principal */
+.titre0 {  font-size: 18pt ; font-family: "Tahoma" ; font-weight: 500; }
+
+.my-bg-primary {
+	background-color: #499de5!important;  
+}
+
+.nav-pills > li > a.active {
+    background-color: #499de5!important;
+}
+
+/* titres du menu principal */
+.titre1 { color: #499de5!important; font-size: 16pt ; font-family: "Tahoma" ; font-weight: 500; }
+
+/* sous titres des sous menus */
+.titre2 { color: #499de5!important; font-size: 14pt ; font-family: "Tahoma"; font-weight: 500; }
+
+
+/* p { font-size: 14pt ; }*/ /* vw = viewport width = unit� �quivalent � 1% de la largeur de la fen�tre */                     
+.acro { text-align: left; font-size: 14pt ; font-family: "Tahoma"; font-weight: 400; }
+div.acro > p::first-letter { color: #00a888; font-weight: bold;} /* vert */
+
+th { font-family: "Tohama"; color: #499de5; background-color: #EEEEEE; /* light grey */ ; font-size: 18pt ;padding : 5px;}
+td { font-family: "Tohama"; font-size:14pt  ; padding : 5px;}
+.pair { background-color: #EEEEEE;} /* light grey */
+.impair { background-color: white; } 
+
+
+.petit { font-size: 12pt;}
+.plusGrand { font-size: 16pt; }
+.ressortir{ font-family: arial; font-size: 18pt; font-weight: bold; font-style: italic; }
+.tailleNormale { font-size: 14pt; }
+
+.fondParDefaut{
+  background-color:  #FBFBFB!important; /* blanc */
+}
+
+.my-nav-brand {
+  margin-bottom: 0.5em;
+  padding-left : 0.5em;
+  padding-right : 0.5em;
+}
+
+.responsiveWidthButNotToLarge {
+   width : 95%;
+   max-width : 600px;
+}
+ 
+
+
+.my-tab-content{
+  padding: 0.8em;
+}
+
+.like-card{
+  background: white;
+  border-width: 1px;
+  border-style : solid;
+}
+
+.ng-valid[required] {
+  border-left: 5px solid #42A948; /* green */
+  }
+ 
+input.ng-invalid , textarea.ng-invalid {
+  border-left: 5px solid #a94442; /* red */
+  }

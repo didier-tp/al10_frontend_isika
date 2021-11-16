@@ -1,0 +1,8 @@
+ng build --prod
+==================
+npm install -g http-server
+============
+cd dist/my-app
+http --proxy http://localhost:8282
+
+avec http://localhost:8282 = URL du backend (WS REST , devise-api )

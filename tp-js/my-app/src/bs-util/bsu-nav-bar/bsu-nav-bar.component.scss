@@ -1,0 +1,18 @@
+@import "../css/base";
+
+
+.navbar-inverse {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: myColor(bg-primary) !important;
+  }
+  
+  .navbar-inverse .navbar-brand {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: myColor(txt-inv-primary) !important;
+  }
+  
+  .navbar-inverse .navbar-brand:hover {
+    color: myColor(txt-inv-hl-primary) !important;
+  }

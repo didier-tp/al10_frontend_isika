@@ -1,0 +1,19 @@
+    <a *ngIf="menuDef.path && _subLevel" [ngClass]="setCssClasses()"
+       [routerLink]="[menuDef.path]"
+       [routerLinkActive]="'active'" (click)="toggleNavBar()">{{menuDef.label}}
+    </a>
+<!-- ou bien -->
+<li *ngIf="menuDef.path && !_subLevel"  class="nav-item">
+    <a [ngClass]="setCssClasses()" [routerLink]="[menuDef.path]" 
+      routerLinkActive='active'  (click)="toggleNavBar()" >{{menuDef.label}}
+    </a>
+</li>
+<!-- ou bien -->
+<div *ngIf="menuDef.divider" class="dropdown-divider"></div>
+<!-- ou bien -->
+<bsu-dropdown-menu *ngIf="menuDef.children" [label]="menuDef.label"
+                [currentUserRoles]="currentUserRoles"
+                [dopdownMenuDefs]="menuDef.children" >
+</bsu-dropdown-menu>
+
+<!-- nb [disabled]="..." ok on button but not exist on hyperlink a -->

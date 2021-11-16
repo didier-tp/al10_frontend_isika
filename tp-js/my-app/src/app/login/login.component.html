@@ -1,0 +1,39 @@
+<h3>login</h3>
+<!-- avec  today = new Date(); coté .ts -->
+today = {{today | date:'dd/MM/yyyy'}} <br/>
+<form #formLogin="ngForm" class="form-horizontal">
+  <div class="form-group row">
+    <label class="col-sm-4 text-sm-right">username:</label>
+    <div class="col-sm-8">
+        <input [(ngModel)]="login.username" name="username" 
+        class="form-control" required  pattern="[a-zA-Z].+" /> 
+    </div>
+ </div>
+  <div class="form-group row">
+    <label class="col-sm-4 text-sm-right">password:</label>
+    <div class="col-sm-8">
+       <input [(ngModel)]="login.password" name="password" 
+       type="password" class="form-control" required minlength="3"/> 
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-4 text-sm-right">roles:</label>
+    <div class="col-sm-8">
+        <input [(ngModel)]="login.roles" class="form-control"
+         name="roles" required /> 
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-8 offset-sm-4">
+    <button class="btn btn-primary"  (click)="onLogin()" 
+          [disabled]="!formLogin.form.valid" > 
+          login <span class="badge badge-primary">
+                  <i class="fa fa-user"></i>
+                </span> 
+        </button>
+    </div>
+  </div>
+</form>
+message: <span [style.color]="authenticated?'green':'red'">{{message | lowercase}} </span> 
+<hr/>
+NB: bonnes valeurs (pour TP): admin1 , pwdadmin1 , admin

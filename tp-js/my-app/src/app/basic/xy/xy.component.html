@@ -1,0 +1,14 @@
+<label>couleur:</label> <select [(ngModel)]="couleur">
+    <option *ngFor="let c of listeCouleurs" [ngValue]="c">{{c}}</option>
+</select> <br/>
+<label>nouvelleValeur:</label> <input type="text" [(ngModel)]="nouvelleValeur" /> <br/>
+<input type="button" value="ajouter" (click)="onAjoutNouvelleValeur()" /> <br/>
+<hr/>
+<h3>{{message}}</h3>
+<table border="1" [style.color]="couleur"> 
+    <tr> <th>i</th> <th>i*i</th> </tr> 
+    <tr *ngFor="let v of values" > 
+        <td>{{v}}</td> <td>{{v*v}}</td> 
+    </tr> 
+</table>
+

@@ -1,0 +1,18 @@
+<p>calculatrice works!</p>
+<label>a:</label><input type="number" [(ngModel)]="a" /> <br/>
+<label>b:</label><input type="number" [value]="b" (input)="onRecupB($event)" /> <br/>
+<button (click)="calculer('+')">addition</button> &nbsp;
+<button (click)="calculer('-')">soustraction</button> &nbsp;
+<button (click)="calculer('*')">multiplication</button> &nbsp; 
+<button [style.display]="modeChoisi=='sophistique'?'inline':'none'"
+(click)="calculer('/')">division</button> <br/>
+res = <span [style.color]="res>=0?'blue':'red'">{{res}}</span>
+
+<p>test (0 considéré comme false ,
+    autre que 0 considéré comme true)
+</p>
+chose: <input type="number"
+[(ngModel)]="chose" /> <br/>
+<div *ngIf="chose">
+chose 
+</div>

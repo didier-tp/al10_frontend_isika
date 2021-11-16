@@ -1,0 +1,22 @@
+<div class="c1" >
+    <h3>Calcul de tva</h3>
+    <label>ht:</label> 
+    <input type="number" [(ngModel)]="ht"
+          (input)="onCalculerTvaEtTtc()" /> <br/>
+          
+    <label>taux:</label>
+    <!--
+    <input type="text" [(ngModel)]="taux" /> <br/>
+    -->
+    <select [(ngModel)]="taux"
+            (change)="onCalculerTvaEtTtc()">
+      <option *ngFor="let t of listeTaux" [ngValue]="t">{{t}}</option>  
+    </select> <br/>
+    <!-- 
+    <input type="button" value="calculer Tva" (click)="onCalculerTvaEtTtc()" /> <br/>
+    -->
+    <div *ngIf="tva != 0">
+      tva= <span>{{tva | number:'1.0-2' }}</span> <br/>
+      ttc= <span>{{ttc | number:'1.0-2' }}</span> <br/>
+    </div>
+  </div>
