@@ -19,6 +19,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 
 import { MyHighlightDirective } from './common/directive/my-highlight.directive';
 import { MynumberPipe } from './common/pipe/mynumber.pipe';
+import { RegletteComponent } from './basic/reglette/reglette.component';
 
 
 
@@ -35,7 +36,8 @@ import { MynumberPipe } from './common/pipe/mynumber.pipe';
     LoginComponent,
     WelcomeComponent,
     MyHighlightDirective,
-    MynumberPipe
+    MynumberPipe,
+    RegletteComponent
   ],
   imports: [
     BrowserModule,

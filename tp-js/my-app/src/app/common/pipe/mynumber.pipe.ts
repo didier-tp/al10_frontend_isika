@@ -10,6 +10,7 @@ export class MynumberPipe implements PipeTransform {
   transform(value: unknown, ...args: unknown[]): unknown {
     let val : number = <number> Number(value);
     let nbDigits  = (<number> args[0]) | 2; //valeur par defaut = 2
+    console.log("nbDigits="+nbDigits)
     let sVal = val.toString(); //ex: "3.14159"
     let posPoint = sVal.indexOf(".");
     if(posPoint>0){
