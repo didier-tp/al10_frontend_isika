@@ -17,8 +17,8 @@ export class MynumberPipe implements PipeTransform {
         let debut = sVal.substring(0,posPoint);
         let fin = sVal.substring(posPoint+1);
         console.log("debut="+debut + " fin="+fin)
-        if(fin.length>2){
-          fin = fin.substring(0,2); //améliorable .
+        if(fin.length>nbDigits){
+          fin = fin.substring(0,nbDigits); //améliorable .
         }
         sVal = debut + "." + fin
     }

@@ -20,7 +20,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { MyHighlightDirective } from './common/directive/my-highlight.directive';
 import { MynumberPipe } from './common/pipe/mynumber.pipe';
 import { RegletteComponent } from './basic/reglette/reglette.component';
-
+import { BsUtilModule } from 'src/bs-util/bs-util.module';
 
 
 @NgModule({
@@ -45,6 +45,7 @@ import { RegletteComponent } from './basic/reglette/reglette.component';
     FormsModule,
     BrowserAnimationsModule,
     TabsModule.forRoot(),
+    BsUtilModule
   ],
   providers: [
   ],
