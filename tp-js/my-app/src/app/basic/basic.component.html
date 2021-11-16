@@ -16,14 +16,25 @@
 <bsu-toggle-panel title="tva">
     <app-tva></app-tva>
 </bsu-toggle-panel>
+<hr/>
+<bsu-toggle-panel [title]="'divers'">
+    <div>
+        <app-reglette width="200" (changeEvent)="onChangeCurseur($event)"></app-reglette>
+        curseur = {{valeurCurseur}}
+    </div>
+</bsu-toggle-panel>
 
-<app-reglette width="200" (changeEvent)="onChangeCurseur($event)"></app-reglette>
-curseur = {{valeurCurseur}}
 
-   <hr/>
-       <app-xy></app-xy>
-       <hr/>
-     <app-zz></app-zz>
 
+<hr/>
+     
+<tabset>
+        <tab heading="xy">
+            <app-xy></app-xy>
+       </tab>
+       <tab heading="zz">
+        <app-zz></app-zz>
+        </tab>
+</tabset>
 
 

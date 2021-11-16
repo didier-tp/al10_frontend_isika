@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { MenuDefinition } from 'src/bs-util/data/MenuDefinition';
 import { PreferencesService } from '../common/service/preferences.service';
 
 @Component({
@@ -10,6 +11,21 @@ export class HeaderComponent implements OnInit {
 
   @Input()
   titre : string ="titre par defaut";
+  
+  myMenuDefs : MenuDefinition[] = [
+    { label : "Partie1" , 
+      children : [
+        { label : "basic" , path : "/ngr-basic" } ,
+        { label : "login" , path : "/ngr-login" },
+        { divider : true },
+        { label : "welcome" , path : "/ngr-welcome" }
+      ]
+    },
+    { label : "basic" , path : "/ngr-basic" } , 
+    { label : "login" , path : "/ngr-login" }
+    ];
+
+
 /*
   myMenuDefs : MenuDefinition[] = [
     { label : "pour admin" , 
