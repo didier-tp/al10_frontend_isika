@@ -1,6 +1,6 @@
 <p class="entete"
    [style.background-color]="preferencesService.couleurFondPreferee"
-    >header - <span id="appHeaderTitle">{{titre}}</span> &nbsp;
+    >header - <span id="appHeaderTitle">{{titre | uppercase}}</span> &nbsp;
     <a routerLink='/ngr-welcome'> welcome</a> &nbsp;
     <a routerLink='/ngr-basic'> basic</a> &nbsp;
     <a routerLink='/ngr-login'> login</a> &nbsp;

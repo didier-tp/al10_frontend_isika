@@ -18,6 +18,7 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
 import { WelcomeComponent } from './welcome/welcome.component';
 
 import { MyHighlightDirective } from './common/directive/my-highlight.directive';
+import { MynumberPipe } from './common/pipe/mynumber.pipe';
 
 
 
@@ -33,7 +34,8 @@ import { MyHighlightDirective } from './common/directive/my-highlight.directive'
     ZzComponent,
     LoginComponent,
     WelcomeComponent,
-    MyHighlightDirective
+    MyHighlightDirective,
+    MynumberPipe
   ],
   imports: [
     BrowserModule,
