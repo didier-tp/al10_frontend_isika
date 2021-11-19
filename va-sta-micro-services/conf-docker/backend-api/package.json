@@ -1,0 +1,38 @@
+{
+  "name": "backend-api",
+  "version": "1.0.0",
+  "description": "nodejs express server for backend-rest-api- (api-news, api-devises, ...)",
+  "main": "dist/server.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec dist/test/*.spec.js",
+    "apidoc": "apidoc -i dist/api/ -o apidoc/",
+    "start": "node dist/server.js",
+	"start_noDB": "node dist/server.js --noDB"
+  },
+  "author": "didier defrance",
+  "license": "ISC",
+  "dependencies": {
+    "@types/mongodb": "^3.3.1",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.5",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.3.0",
+    "nedb": "^1.8.0",
+    "sqlite3": "^4.1.0",
+    "tslib": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.2",
+    "@types/chai-http": "^4.2.0",
+    "@types/express": "^4.17.1",
+    "@types/express-fileupload": "^1.1.0",
+    "@types/jsonwebtoken": "^8.3.3",
+    "@types/mocha": "^5.2.7",
+    "@types/nedb": "^1.8.9",
+    "@types/node": "^12.7.4",
+    "@types/sqlite3": "^3.1.5",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.2.0"
+  }
+}

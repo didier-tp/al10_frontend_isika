@@ -1,0 +1,35 @@
+version: '3'
+
+networks:
+   mynetwork:
+      driver: bridge
+ 
+services:
+
+ backend-api:
+   build : ./backend-api
+#   image: xyz/devise-api (if already build image)
+#   build image name = projectName_serviceName
+#   soit               conf-docker_backend-api
+   container_name: backend-api-container
+   environment:
+     PORT : 8282
+   networks:
+     mynetwork:
+      aliases:
+          - backend.api.host
+          - backend.api.service
+   ports:
+     - "8282:8282"
+ 
+ frontend:
+#   image: xyz/frontend (if already build image)
+#   build image name = projectName_serviceName
+#   soit               conf-docker_frontend
+   build : ./frontend
+   container_name : frontend-container
+   ports:
+     - "80:80"
+   networks:
+     - mynetwork
+ 

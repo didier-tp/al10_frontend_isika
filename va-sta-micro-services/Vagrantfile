@@ -1,0 +1,41 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  
+  #configuration of hostmanager plugin 
+  #(vagrant plugin install vagrant-hostmanager) :
+  config.hostmanager.enabled = true
+  config.hostmanager.manage_guest = true
+
+  config.vm.box = "hashicorp/bionic64"
+  config.vm.hostname = "xyz.mycompany.fun"
+  
+  # Create a forwarded port mapping which allows 
+  # access to a specific port
+  # within the machine from a port on the host machine. 
+  # NOTE: This will enable public access to the opened port
+  config.vm.network "forwarded_port", guest: 80, host: 80
+  config.vm.network "forwarded_port", guest: 8282, host: 8282
+  #80 (80 en interne) pour des access à nginx
+  #8282 (8282 en interne) pour des access directs à node
+  
+  # Create a private network, which allows 
+  # host-only access to the machine
+  # using a specific IP.
+  # config.vm.network "private_network", ip: "192.168.33.10"
+  config.vm.network "private_network", type: "dhcp"
+
+
+  config.vm.provider "virtualbox" do |vb|
+  #  # Customize the amount of memory on the VM:
+     vb.memory = "1024"
+  end
+  
+  #config.vm.provision "shell", path: "xyz.sh"
+  #need of: vagrant plugin install vagrant-docker-compose
+  config.vm.provision :docker
+  #config.vm.provision :docker_compose
+  config.vm.provision :docker_compose, yml: "/vagrant/conf-docker/docker-compose.yml", rebuild: true, run: "always"
+  
+end

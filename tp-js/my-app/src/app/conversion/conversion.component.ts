@@ -26,7 +26,7 @@ export class ConversionComponent implements OnInit {
                 .subscribe({
                     next : (res :number) => { this.montantConverti = res;
                                       console.log("resultat obtenu en différé")} ,
-                    error : (err) => { console.log("error:"+err)}
+                    error : (err:any) => { console.log("error:"+err)}
                    });
         console.log("suite immédiate (sans attente) de onConvertir");
         //Attention : sur cette ligne , le résultat n'est à ce stade pas encore connu

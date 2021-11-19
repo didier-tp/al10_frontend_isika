@@ -1,0 +1,40 @@
+{
+    "dev": {
+        "mongo-test": {
+            "type": "mongodb",
+            "dialect": null,
+            "host": "localhost",
+            "port": 27017,
+            "database": "test",
+            "user": null,
+            "password": null
+        },
+        "nedb-test": {
+            "type": "nedb",
+            "dialect": null,
+            "host": null,
+            "port": null,
+            "database": "nedb-test",
+            "user": null,
+            "password": null
+        },
+        "mysql-dev": {
+            "type": "sequelize",
+            "dialect": "mysql",
+            "host": "localhost",
+            "port": 3306,
+            "database": "myFrDeviseDb",
+            "user": "root",
+            "password": "root"
+        }
+    },
+    "prod": {
+        "mongo-test": {},
+        "mysql-dev": {
+            "dialect": "",
+            "user": "",
+            "database": " ",
+            "password": ""
+        }
+    }
+}

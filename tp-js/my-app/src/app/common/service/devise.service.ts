@@ -19,7 +19,7 @@ export interface ConvertResult {
 export class DeviseService {
 
   //private _apiBaseUrl ="http://localhost:8282/devise-api"; 
-  private _apiBaseUrl ="./devise-api"; //with ng serve --proxy-config proxy.conf.json
+  private _apiBaseUrl ="/devise-api"; //with ng serve --proxy-config proxy.conf.json
 
   constructor(private _http : HttpClient){}
 

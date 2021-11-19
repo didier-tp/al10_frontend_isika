@@ -15,12 +15,14 @@ export class AdminDeviseComponent implements OnInit {
   }
   
   onSupprimer(){
+  
     this._deviseService.deleteDeviseServerSide$(this.codeDevise)
     .subscribe({
       next: ()=>{this.message="ok"; } ,
-      error: (error) => { console.log(error);
+      error: (error:any) => { console.log(error);
                    this.message = JSON.stringify(error); }
       });
+   
   }
 
   ngOnInit(): void {

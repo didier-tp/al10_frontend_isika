@@ -1,0 +1,8 @@
+titre : Visite estivale au château de Gaillon
+
+image:gaillon-v03.jpg
+
+resumé:
+La nouvelle saison des visites théâtralisées approche !
+
+details : gaillon_ete_2018.html
