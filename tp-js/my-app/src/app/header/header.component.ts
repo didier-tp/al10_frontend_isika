@@ -23,16 +23,17 @@ export class HeaderComponent implements OnInit {
   }
   
   myMenuDefs : MenuDefinition[] = [
-    { label : "Partie1" , 
+    { label : "Pour admin" , 
       children : [
-        { label : "basic" , path : "/ngr-basic" } ,
+        { label : "admin-devise" , path : "/ngr-admin-devise" } ,
         { label : "login" , path : "/ngr-login" },
         { divider : true },
         { label : "welcome" , path : "/ngr-welcome" }
       ]
     },
     { label : "basic" , path : "/ngr-basic" } , 
-    { label : "login" , path : "/ngr-login" }
+    { label : "conversion" , path : "/ngr-conversion" } ,
+    { label : "welcome" , path : "/ngr-welcome" }
     ];
 
 

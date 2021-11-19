@@ -1,0 +1,10 @@
+<h3>conversion de devise</h3>
+montant : <input [(ngModel)]="montant" name="montant" /> <br/>
+code devise source : <select [(ngModel)]="codeDeviseSource" name="codeDevSource" >
+    <option *ngFor="let d of listeDevises">{{d.code}}</option>
+</select> <br/>
+code devise cible : <select [(ngModel)]="codeDeviseCible" name="codeDevCible">
+    <option *ngFor="let d of listeDevises">{{d.code}}</option>
+</select> <br/>
+<input type="button" (click)="onConvertir()" value="convertir" /> <br/>
+montantConverti = <span id="montantConverti">{{montantConverti}}</span>

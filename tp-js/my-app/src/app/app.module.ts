@@ -21,7 +21,12 @@ import { MyHighlightDirective } from './common/directive/my-highlight.directive'
 import { MynumberPipe } from './common/pipe/mynumber.pipe';
 import { RegletteComponent } from './basic/reglette/reglette.component';
 import { BsUtilModule } from 'src/bs-util/bs-util.module';
-
+import { ConversionComponent } from './conversion/conversion.component';
+import { AdminDeviseComponent } from './admin-devise/admin-devise.component';
+import { MyAuthInterceptor } from './common/interceptor/my-auth.interceptor';
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { SeuilComponent } from './basic/seuil/seuil.component';
+import { ListProdComponent } from './basic/list-prod/list-prod.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +42,11 @@ import { BsUtilModule } from 'src/bs-util/bs-util.module';
     WelcomeComponent,
     MyHighlightDirective,
     MynumberPipe,
-    RegletteComponent
+    RegletteComponent,
+    ConversionComponent,
+    AdminDeviseComponent,
+    SeuilComponent,
+    ListProdComponent
   ],
   imports: [
     BrowserModule,
@@ -45,9 +54,15 @@ import { BsUtilModule } from 'src/bs-util/bs-util.module';
     FormsModule,
     BrowserAnimationsModule,
     TabsModule.forRoot(),
-    BsUtilModule
+    BsUtilModule,
+    HttpClientModule
   ],
   providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: MyAuthInterceptor,
+      multi: true
+      }
   ],
   bootstrap: [AppComponent]
 })
