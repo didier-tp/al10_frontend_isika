@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-calculatrice',
@@ -12,7 +12,7 @@ export class CalculatriceComponent implements OnInit {
   b : number = 0 ;  //à saisir
   res  : number = 0; //à afficher 
 
-  modeChoisi : string = "sophistique";
+  modeChoisi : string = "sophistiquee";
   //modeChoisi : "simple" | "sophistique" = "simple";
 
   chose : any = 0;
@@ -37,7 +37,13 @@ export class CalculatriceComponent implements OnInit {
     
   }
 
-  constructor() { 
+  constructor(route : ActivatedRoute) { 
+    route.params.subscribe(
+      (params: Params)=> {
+        this.modeChoisi = params['mode'];
+      }
+    )
+    //NB: params['mode'] car { path: 'calculatrice/:mode', ... },
   }
 
   ngOnInit(): void {

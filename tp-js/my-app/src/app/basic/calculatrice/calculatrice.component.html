@@ -3,7 +3,9 @@
 <label>b:</label><input type="number" [value]="b" (input)="onRecupB($event)" /> <br/>
 <button (click)="calculer('+')">addition</button> &nbsp;
 <button (click)="calculer('-')">soustraction</button> &nbsp;
-<button (click)="calculer('*')">multiplication</button> &nbsp; 
+<input type="button"  value="*" (click)="calculer('*')" 
+                      [style.visibility]="modeChoisi=='sophistiquee'?'visible':'hidden'" >
+ &nbsp; 
 <button [style.display]="modeChoisi=='sophistique'?'inline':'none'"
 (click)="calculer('/')">division</button> <br/>
 res = <span [style.color]="res>=0?'blue':'red'">{{res}}</span>

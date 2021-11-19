@@ -10,6 +10,15 @@
     </tab>
 </tabset>
 -->
+<a routerLink="/ngr-basic/calculatrice/simple" >calculatrice simple</a><br>
+<a routerLink="/ngr-basic/calculatrice/sophistiquee" >calculatrice sophistiquee</a><br> 
+<a routerLink="/ngr-basic/tva" >tva</a><br>
+
+<router-outlet></router-outlet>
+<!-- sera automatiquement remplacé par 
+    les sous-sous-composant tva ou calcilatrice -->
+
+<!--
 <bsu-toggle-panel title="calculatrice">
     <app-calculatrice></app-calculatrice>
 </bsu-toggle-panel>
@@ -17,6 +26,7 @@
 <bsu-toggle-panel title="tva">
     <app-tva></app-tva>
 </bsu-toggle-panel>
+-->
 <hr/>
 <bsu-toggle-panel [title]="'divers'">
     <div>

@@ -1,1 +1,1 @@
-{"dependencies":[["vagrant-docker-compose",["= 1.5.1"]],["vagrant-hostmanager",["= 1.8.9"]]],"checksum":"05938c5e870c109b11d661b5e34d2363dd50108f10c86493e999417056f85371","vagrant_version":"2.2.14"}
+{"dependencies":[["vagrant-docker-compose",["= 1.5.1"]],["vagrant-hostmanager",["= 1.8.9"]]],"checksum":"409dfaa190dec7dfc1e7c11b80551aaec80bf2e369e1791da5a74ec124783733","vagrant_version":"2.2.14"}
